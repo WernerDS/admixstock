@@ -1,0 +1,220 @@
+$sync-width: 30px;
+$sync-width-sm: 20px;
+
+.mixer {
+	position: relative;
+	@include clearfix();
+	width: 440px;
+	margin: 0 auto;
+	.ingedient,
+	.blade {
+		width: 160px;
+	    height: 130px;
+	    display: block;
+	    float: left;
+	    border: 2px solid $border-color;
+	    text-align: center;
+	    border-radius: 2rem;
+	    background: $white;
+	    transition: $transition-base;
+	    img {
+			display: block;
+			margin: 0 auto;
+			max-width: 90%;
+			height: 76px;
+	    }
+	    h6 {
+		    margin: 0 ($spacer / 2);
+		    color: $body-color;
+	    }
+	    
+	    // States
+	    &.to-choose {
+		    border-style: dashed;
+	    }
+	    &.disabled {
+		    background: $gray-200;
+		    cursor: default;
+		    .svg-inline--fa,
+		    h6 {
+			    color: $gray-400;
+			}
+	    }
+	    &.active {
+		    border-color: $success;
+	    }
+	    &.error {
+		    border-color: $danger !important;
+	    }
+	    &.selected {
+		    border-color: $body-color;
+	    }
+	}
+	.blade {
+		&.error {
+		    border-color: $warning !important;
+	    }
+	}
+	a {
+		&:hover {
+			border-color: $primary;
+		}
+	}
+	.blade {
+		width: 60px;
+	    height: 60px;
+	    border-radius: 50%;
+	    margin: 30px $sync-width 0;
+	    position: relative;
+	    .svg-inline--fa {
+		    height: 56px;
+	    }
+	    &.blade-left {
+		    &:before {
+				content: "";
+			    position: absolute;
+			    width: $sync-width;
+				height: 8px;
+				top: calc(50% - 4px);
+			    display: block;
+			    -webkit-mask: url("../images/arrow.svg");
+			    mask: url("../images/arrow.svg");
+			    transition-property: opacity,transform;
+			    transition-duration: .5s;
+			    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+			    transition-delay: .3s;
+			    will-change: opacity,transform;
+				background: $border-color;
+				animation: move-arrows .5s linear infinite;
+			    left: -($sync-width + 2);
+			}
+			&.active {
+				&:before {
+					background: $success;
+				}
+			}
+		}
+		&.blade-right {
+		    &:after {
+				content: "";
+			    position: absolute;
+			    width: $sync-width;
+				height: 8px;
+				top: calc(50% - 4px);
+			    display: block;
+			    -webkit-mask: url("../images/arrow.svg");
+			    mask: url("../images/arrow.svg");
+			    transition-property: opacity,transform;
+			    transition-duration: .5s;
+			    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+			    transition-delay: .3s;
+			    will-change: opacity,transform;
+				background: $border-color;
+				animation: move-arrows .5s linear infinite;
+				right: -($sync-width + 2);
+			}
+		}
+	}
+	
+	// Mixer state
+	&.synced {
+		.blade-left,
+		.blade-right {
+			&:before,
+			&:after {
+				background: $success;
+			}
+		}
+	}
+	
+	// Small
+	&.small {
+		width: 160px;
+		margin: 0 auto 0 0;
+		.ingedient,
+		.blade {
+			width: 40px;
+		    height: 40px;
+		    font-family: $headings-font-family;
+		    line-height: 37px;
+		    .svg-inline--fa {
+			    height: 36px;
+		    }
+	    }
+	    .blade {
+		    margin: 0 $sync-width-sm 0;
+		    .svg-inline--fa {
+			    height: 36px;
+		    }
+		    &:before,
+		    &:after {
+			    width: $sync-width-sm;
+			}
+			&:before {
+				left: -($sync-width-sm + 2);
+			}
+		    &:after {
+			    right: -($sync-width-sm + 2);
+			}
+	    }
+	}
+	
+	// On Color
+	&.on-color {
+		.ingedient,
+		.blade {
+			background: transparent;
+			border-color: rgba($black, 0.2);
+			.svg-inline--fa,
+		    h6 {
+			    color: $white;
+			}
+			&.blade-left,
+			&.blade-right {
+				&:before,
+				&:after {
+					background: rgba($black, 0.2);
+				}
+			}
+			&.blade-left {
+				&:before {
+					//background: $white;
+				}
+				&.active {
+					&:before {
+						background: $white;
+					}
+				}
+			}
+			&.blade-right {
+				&:after {
+					//background: $white;
+				}
+			}
+			&.active {
+				border-color: $white;
+			}
+		}
+		&.synced {
+			.blade-left,
+			.blade-right {
+				&:before,
+				&:after {
+					background: $white;
+				}
+			}
+		}
+	}
+}
+
+
+@keyframes move-arrows {
+	to {
+		-webkit-mask-position:11px 0;
+		mask-position:11px 0
+	}
+}
+
+.category-list {
+	text-align: left;
+}

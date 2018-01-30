@@ -1,0 +1,282 @@
+﻿@{
+    ViewData["Title"] = "Used Dashboard";
+}
+
+<section class="section pri-sec-gradient">
+	<div class="container-fluid text-white">
+		<div class="row">
+			<div class="col">
+				<h1>@ViewData["Title"]</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="container-fluid mt-4">
+	<div class="row mb-5">
+		<div class="col">
+			
+			<div class="card">
+				<div class="card-body">
+					<a href="/add-service" class="btn btn-primary float-right">New Service</a>
+					<h2 class="mb-0">My Services</h2>
+				</div>
+				<table class="table mb-0">
+					<tbody>
+						<tr>
+							<td width="1%">
+								<span class="fa-layers fa-fw fa-2x">
+								    <i class="fas fa-circle text-success"></i>
+								    <i class="fa-inverse fas fa-check" data-fa-transform="shrink-6"></i>
+								</span>
+							</td>
+							<td>
+								<h5><a href="/used-service">Bidvest McCarthy Toyota</a></h5>
+								<small>Created <b>Dec 15, 2017 9:17 am</b></small>
+							</td>
+							<td>
+								<small>Last requested: <b>Today at 10:04 am</b></small><br>
+								<small class="text-truncate">Last status code:</small> <div class="badge badge-pill badge-MTccess">Great, you're connected!</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">24</a></h5>
+										<div><i class="fas fa-users"></i> Dealers</div>
+									</div>
+									<div class="col">
+										<h5><a href="javascript:void(0)">3</a></h5>
+										<div><i class="fas fa-tags"></i> Categories</div>
+									</div>
+									<div class="col">
+										<h5><a href="javascript:void(0)">2</a></h5>
+										<div><i class="fas fa-link"></i> Connections</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Service"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
+						</tr>
+						<tr>
+							<td width="1%">
+								<span class="fa-layers fa-fw fa-2x">
+								    <i class="fas fa-circle text-success"></i>
+								    <i class="fa-inverse fas fa-check" data-fa-transform="shrink-6"></i>
+								</span>
+							</td>
+							<td>
+								<h5><a href="/used-service">Auto Mart</a></h5>
+								<small>Created <b>Dec 15, 2017 9:17 am</b></small>
+							</td>
+							<td>
+								<small>Last requested: <b>Today at 10:04 am</b></small><br>
+								<small class="text-truncate">Last status code:</small> <div class="badge badge-pill badge-MTccess">Great, you're connected!</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">45</a></h5>
+										<div><i class="fas fa-users"></i> Dealers</div>
+									</div>
+									<div class="col">
+										<h5><a href="javascript:void(0)">3</a></h5>
+										<div><i class="fas fa-tags"></i> Categories</div>
+									</div>
+									<div class="col">
+										<h5><a href="javascript:void(0)">2</a></h5>
+										<div><i class="fas fa-link"></i> Connections</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Service"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row mb-5">
+		<div class="col">
+			
+			<div class="card">
+				<div class="card-body">
+					<a href="/add-connection" class="btn btn-primary float-right">New Connection</a>
+					<h2 class="mb-0">My Connections</h2>
+				</div>
+				<table class="table mb-0 table-lg">
+					<tbody>
+						<tr>
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade blade-left blade-right"  data-toggle="tooltip" data-placement="top" title="Syncing">
+										<i class="fas fa-sync fa-spin fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/connection-MT-AM">ToyotaAutoMart</a></h5>
+								<small>Created <b>Today at 08:48</b></small>
+							</td>
+							<td>
+								<small>Last synced: <b>...</b></small><br>
+								<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-secondary"><i class="fas fa-sync fa-spin"></i> Syncing at 83%</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">...</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="mixer small synced">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade blade-left blade-right active" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+										<i class="fas fa-clock fa-lg"></i>
+									</div>
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/connection-MT-AM">ToyotaAutoMart</a></h5>
+								<small>Created <b>Today at 08:48</b></small>
+							</td>
+							<td>
+								<small>Last synced: <b>Dec 13, 2017 9:48 am</b></small><br>
+								<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-MTccess"><i class="fas fa-check-circle"></i> Connection Good</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">2</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade blade-left error" data-toggle="tooltip" data-placement="top" title="Keep changes">
+										<i class="fas fa-tasks fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/connection-MT-AM">ToyotaAutoMart</a></h5>
+								<small>Created <b>Today at 08:48</b></small>
+							</td>
+							<td>
+								<small>Last synced: <b>Dec 13, 2017 9:48 am</b></small><br>
+								<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-warning"><i class="fas fa-exclamation-triangle"></i> Connection Issue</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">9</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient error" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade" data-toggle="tooltip" data-placement="top" title="Always Import">
+										<i class="fas fa-copy fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/connection-MT-AM">ToyotaAutoMart</a></h5>
+								<small>Created <b>Today at 08:48</b></small>
+							</td>
+							<td>
+								<small>Last synced: <b>Dec 13, 2017 9:48 am</b></small><br>
+								<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-danger"><i class="fas fa-exclamation-circle"></i> Fix MT Connection</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">3</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade blade-left blade-right active" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+										<i class="fas fa-clock fa-lg"></i>
+									</div>
+									<div class="ingedient error" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/connection-MT-AM">ToyotaAutoMart</a></h5>
+								<small>Created <b>Today at 08:48</b></small>
+							</td>
+							<td>
+								<small>Last synced: <b>Dec 13, 2017 9:48 am</b></small><br>
+								<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-danger"><i class="fas fa-exclamation-circle"></i> Fix AM Connection</div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">2</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

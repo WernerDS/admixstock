@@ -1,0 +1,33 @@
+/*!
+ * Admix Stock v1.0.0
+ */
+ 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Muli:900');
+
+html {font-size: 16px;}
+html, html a, body {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004); 
+}
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Bootstrap Overrides
+@import "bootstrap-overrides/buttons";
+@import "bootstrap-overrides/cards";
+@import "bootstrap-overrides/forms";
+@import "bootstrap-overrides/navbars";
+@import "bootstrap-overrides/tabs";
+
+// Vendor Overrides
+//@import "vendor-overrides/flatpickr";
+
+// Skin
+@import "skin/colors";
+@import "skin/connections"; 
+@import "skin/layout";
+@import "skin/pageload";
+@import "skin/pricing";
+@import "skin/sections";
+@import "skin/switch"; 

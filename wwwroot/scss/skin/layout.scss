@@ -1,0 +1,19 @@
+.container-fluid {
+	@include media-breakpoint-up(md) {
+		width: 80%;
+		margin-left: 10%;
+	    margin-right: 10%;
+	    position: relative;
+	    display: table;
+    }
+}
+
+.avatar {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 1.5em;
+}

@@ -1,0 +1,404 @@
+﻿@{
+    ViewData["Title"] = "Bidvest McCarthy Toyota";
+}
+
+<section class="section pb-4 pri-sec-gradient">
+	<div class="container-fluid text-white">
+		<div class="row">
+			<div class="col">
+				<h1>@ViewData["Title"]</h1>
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-3">
+								<input type="text" class="form-control search"  placeholder="Search name, ID or...">
+							</div>
+							<div class="col-md-3">
+								<select class="form-control">
+									<option selected>Dealer</option>
+									<option value="1">Arcadia</option>
+									<option value="2">Bruma</option>
+									<option value="3">Centurion</option>
+								</select>
+							</div>
+							<div class="col-md-3">
+								<select class="form-control">
+									<option selected>Category</option>
+									<option value="1">New Cars</option>
+									<option value="2">Demo Cars</option>
+									<option value="3">Pre Owned</option>
+								</select>
+							</div>
+							<div class="col-md-3">
+								<a href="" class="btn btn-secondary btn-block">Apply Filter</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="container-fluid mt-4">
+	<div class="row">
+		<div class="col">
+
+<div class="card">
+	<div class="card-body">
+<nav>
+	<div class="nav nav-pills" id="nav-tab" role="tablist">
+		<a class="nav-item nav-link active" id="nav-one-tab" data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true"><i class="fas fa-sticky-note"></i> Stock</a>
+		<a class="nav-item nav-link" id="nav-two-tab" data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false"><i class="fas fa-users"></i> Dealers</a>
+		<a class="nav-item nav-link" id="nav-three-tab" data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false"><i class="fas fa-tags"></i> Categories</a>
+		<a class="nav-item nav-link" id="nav-four-tab" data-toggle="tab" href="#nav-four" role="tab" aria-controls="nav-four" aria-selected="false"><i class="fas fa-history"></i> Activity</a>
+		<a class="nav-item nav-link" id="nav-five-tab" data-toggle="tab" href="#nav-five" role="tab" aria-controls="nav-five" aria-selected="false"><i class="fas fa-cog"></i> Settings</a>
+		<a class="nav-item nav-link" id="nav-six-tab" data-toggle="tab" href="#nav-six" role="tab" aria-controls="nav-six" aria-selected="false"><i class="fas fa-link"></i> Connections</a>
+		<a class="nav-item nav-link" id="nav-seven-tab" data-toggle="tab" href="#nav-seven" role="tab" aria-controls="nav-seven" aria-selected="false"><i class="fas fa-exchange-alt"></i> Changes</a>
+		<a class="nav-item nav-link" id="nav-eight-tab" data-toggle="tab" href="#nav-eight" role="tab" aria-controls="nav-eight" aria-selected="false"><i class="fas fa-list-alt"></i> Fields</a>
+	</div>
+</nav>
+	</div>
+
+<div class="tab-content" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+		
+<table class="table">
+	<thead class="thead-light">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Brand</th>
+			<th>Dealer</th>
+			<th>Category</th>
+			<th>Year</th>
+			<th>V1(Ode)</th>
+			<th>V2(Fuel)</th>
+			<th>V3(Drive)</th>
+			<th>V4(Colour)</th>
+			<th>Price</th>
+			<th>Images</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>001</td>
+			<td>Corolla 1.4D Prestige</td>
+			<td>Toyota</td>
+			<td><a href="">Centurion</a></td>
+			<td><a href="">Pre Owned</a></td>
+			<td>2017</td>
+			<td>4500</td>
+			<td>Petrol</td>
+			<td>FWD</td>
+			<td>White</td>
+			<td>263,990</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>RAV4 2.2 D GX AWD</td>
+			<td>Toyota</td>
+			<td><a href="">Edenvale</a></td>
+			<td><a href="">Demo Cars</a></td>
+			<td>2017</td>
+			<td>9600</td>
+			<td>Petrol</td>
+			<td>FWD</td>
+			<td>White</td>
+			<td>399,990</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>GT86</td>
+			<td>Toyota</td>
+			<td><a href="">Woodmead</a></td>
+			<td><a href="">New Cars</a></td>
+			<td>2018</td>
+			<td>-</td>
+			<td>Petrol</td>
+			<td>AWD</td>
+			<td>Red</td>
+			<td>600,990</td>
+			<td>10</td>
+		</tr>
+	</tbody>
+</table>
+
+		
+	</div>
+	<div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+		
+<table class="table">
+	<thead class="thead-light">
+		<tr>
+			<th>Dealers</th>
+			<th>Number of Stock</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>Arcadia</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Bruma</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Centurion</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Edenvale</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Gezina</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Hatfield</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Hatfield Digital Sales</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Lynnwood</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Midrand</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Sinoville</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Woodmead</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Ballito</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Durban Kingsmead</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Durban North</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Edwin Swales</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Empangeni</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Pietermaritzburg</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Pinetown</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Pre-owned Mobeni</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Richards Bay</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>N1 City</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>N1 City Mall (AMK)</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Paarl</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Tableview Digital</td>
+			<td>12</td>
+		</tr>
+	</tbody>
+</table>
+		
+	</div>
+	<div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+		
+<table class="table">
+	<thead class="thead-light">
+		<tr>
+			<th>Name</th>
+			<th>Number of Stock</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>New Cars</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>Demo Cars</td>
+			<td>58</td>
+		</tr>
+		<tr>
+			<td>Pre Owned</td>
+			<td>34</td>
+		</tr>
+	</tbody>
+</table>
+
+	</div>
+	<div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
+		
+<table class="table">
+	<thead class="thead-light">
+		<tr>
+			<th>&nbsp;</th>
+			<th>State</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td><i class="fas fa-plug text-danger"></i></td>
+			<td>Service disconnected</td>
+			<td>Dec 15, 2017 08:48 am</td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-pencil-alt"></i></td>
+			<td>Service edited</td>
+			<td>Dec 13, 2017 14:28 am</td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-check text-success"></i></td>
+			<td>Service connected</td>
+			<td>Dec 10, 2017 08:48 am</td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-comment-alt"></i></td>
+			<td>Feed requested</td>
+			<td>Dec 11, 2017 10:32 am</td>
+		</tr>
+		<tr>
+			<td><i class="fas fa-plus text-info"></i></td>
+			<td>Service created</td>
+			<td>Dec 9, 2017 10:28 am</td>
+		</tr>
+	</tbody>
+</table>
+		
+	</div>
+	<div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab"></div>
+	<div class="tab-pane fade" id="nav-six" role="tabpanel" aria-labelledby="nav-six-tab"></div>
+	<div class="tab-pane fade" id="nav-seven" role="tabpanel" aria-labelledby="nav-seven-tab"></div>
+	<div class="tab-pane fade" id="nav-eight" role="tabpanel" aria-labelledby="nav-eight-tab">
+		
+<table class="table">
+	<thead class="thead-light">
+		<tr>
+			<th width="33%" style="text-align: right">Bidvest McCarthy</th>
+			<th width="33%" style="text-align: center">Example Data</th>
+			<th width="33%">Auto Mart</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: right">Stock ID</td>
+			<td align="center"><div class="badge badge-light">521</div></td>
+			<td>DealerID</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Title</td>
+			<td align="center"><div class="badge badge-light">VW Polo</div></td>
+			<td>Name</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Description</td>
+			<td align="center"><div class="badge badge-light">...</div></td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Category</td>
+			<td align="center"><div class="badge badge-light">Cars</div></td>
+			<td>CategoryName</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Price</td>
+			<td align="center"><div class="badge badge-light">R100,500</div></td>
+			<td>Price</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Condition</td>
+			<td align="center"><div class="badge badge-light">Used</div></td>
+			<td>State</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Variant 1</td>
+			<td align="center"><div class="badge badge-light">1500 km</div></td>
+			<td>Kilometeres</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Variant 2</td>
+			<td align="center"><div class="badge badge-light">Petrol</div></td>
+			<td>FuelType</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Variant 3</td>
+			<td align="center"><div class="badge badge-light">AWD</div></td>
+			<td>Drivetrain</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Variant 4</td>
+			<td align="center"><div class="badge badge-light">White</div></td>
+			<td>Colour</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Year</td>
+			<td align="center"><div class="badge badge-light">285000</div></td>
+			<td>Year</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Location</td>
+			<td align="center"><div class="badge badge-light">DURBAN</div></td>
+			<td>Seller</td>
+		</tr>
+		<tr>
+			<td style="text-align: right">AttachmentPath1</td>
+			<td align="center"><div class="badge badge-light">item/5/ravt101.jpg</div></td>
+			<td>Attachment1</td>
+		</tr>
+	</tbody>
+</table>		
+		
+	</div>
+</div>
+</div>
+
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	
+}

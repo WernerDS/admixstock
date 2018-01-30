@@ -1,0 +1,93 @@
+// Colors
+$gradient-degree:     150deg;
+$primary-color:       $primary;
+$secondary-color:     $purple;
+
+
+// Gradients
+.pri-sec-gradient {
+	background: linear-gradient($gradient-degree,$primary-color,$secondary-color);
+}
+.sec-pri-gradient {
+	background: linear-gradient($gradient-degree,$secondary-color,$primary-color);
+}
+.brand-gradient-lighter {
+	background: linear-gradient($gradient-degree,$primary-color,lighten($primary-color,20%));
+}
+.brand-gradient-darker {
+	background: linear-gradient($gradient-degree,$primary-color,darken($primary-color,20%));
+}
+.sec-gradient-lighter {
+	background: linear-gradient($gradient-degree,$secondary-color,lighten($secondary-color,20%));
+}
+.sec-gradient-darker {
+	background: linear-gradient($gradient-degree,$secondary-color,darken($secondary-color,20%));
+}
+.dark-gradient {
+	background: linear-gradient($gradient-degree,$black,$gray-700);
+	color: white !important;
+}
+.light-gradient {
+	background: linear-gradient($gradient-degree,$white,$gray-300);
+	color: $body-color !important;
+}
+.brand-text-gradient {
+	background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
+	background: linear-gradient(left, $primary-color, $secondary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+//Social
+$bg-facebook: 			#3b5998;
+$bg-twitter: 			#55acee;
+$bg-pinterest: 			#cc2127;
+$bg-google: 			#dd4b39;
+$bg-linkedin: 			#0976b4;
+$bg-dribbble: 			#ea4c89;
+$bg-github: 			#333333;
+$bg-youtube: 			#e52d27;
+$bg-instagram: 		    #125688;
+$bg-reddit: 			#ff4500;
+$bg-tumblr: 			#35465c;
+$bg-behance: 			#1769ff;
+
+.bg-facebook {
+	background-color: $bg-facebook;
+}
+.bg-twitter {
+	background-color: $bg-twitter;
+}
+.bg-pinterest {
+	background-color: $bg-pinterest;
+}
+.bg-google {
+	background-color: $bg-google;
+}
+.bg-linkedin {
+	background-color: $bg-linkedin;
+}
+.bg-dribbble {
+	background-color: $bg-dribbble;
+}
+.bg-github {
+	background-color: $bg-github;
+}
+.bg-youtube {
+	background-color: $bg-youtube;
+}
+.bg-instagram {
+	background-color: $bg-instagram;
+}
+.bg-reddit {
+	background-color: $bg-reddit;
+}
+.bg-tumblr {
+	background-color: $bg-tumblr;
+}
+.bg-behance {
+	background-color: $bg-behance;
+}
+
+ 

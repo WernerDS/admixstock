@@ -1,0 +1,128 @@
+$btn-height:	35.5px;
+
+//Social
+$social-facebook: 			#3b5998;
+$social-twitter: 			#55acee;
+$social-pinterest: 			#cc2127;
+$social-google: 			#dd4b39;
+$social-linkedin: 			#0976b4;
+$social-dribbble: 			#ea4c89;
+$social-github: 			#333333;
+$social-youtube: 			#e52d27;
+$social-instagram: 		    #125688;
+$social-reddit: 			#ff4500;
+$social-tumblr: 			#35465c;
+$social-behance: 			#1769ff;
+
+// Social buttons
+@mixin social-buttons-color ($color){
+    background-color: $color;
+    color: #fff;
+    transition: $transition-base;
+    box-shadow: 0 2px 2px 0 rgba($color,0.2), 0 3px 1px -2px rgba($color,0.2), 0 1px 5px 0 rgba($color,0.2);
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $color;
+        color: #fff;
+        box-shadow: 0 14px 26px -12px rgba($color,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba($color,.2);
+    }
+
+    &.btn-simple {
+        color: $color;
+        background-color: transparent;
+        box-shadow: none;
+        &:focus,
+	    &:active,
+	    &:hover{
+		    background-color: $color;
+			color: #fff;
+		}
+    }
+}
+
+// Buttons
+.btn {
+	min-width: 100px;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+	// Rounded
+	&.btn-round {
+		border-radius: 3rem;
+	}
+	
+	// Btn Lg
+	&.btn-lg {
+		min-width: 150px;
+	}
+	
+	// Circle
+	&.btn-circle {
+		border-radius: 50%;
+	}
+	
+	// Square & Circle
+	&.btn-square,
+	&.btn-circle {
+		width: $btn-height;
+		padding: $input-btn-padding-y;
+		min-width: 0;
+	}
+	
+	// Social buttons
+    &.btn-facebook {
+    	@include social-buttons-color($social-facebook);
+    }
+    &.btn-twitter {
+    	@include social-buttons-color($social-twitter);
+    }
+    &.btn-pinterest {
+    	@include social-buttons-color($social-pinterest);
+    }
+    &.btn-google {
+    	@include social-buttons-color($social-google);
+    }
+    &.btn-linkedin {
+    	@include social-buttons-color($social-linkedin);
+    }
+    &.btn-dribbble {
+    	@include social-buttons-color($social-dribbble);
+    }
+    &.btn-github {
+    	@include social-buttons-color($social-github);
+    }
+    &.btn-youtube {
+    	@include social-buttons-color($social-youtube);
+    }
+    &.btn-instagram {
+    	@include social-buttons-color($social-instagram);
+    }
+    &.btn-reddit {
+    	@include social-buttons-color($social-reddit);
+    }
+    &.btn-tumblr {
+    	@include social-buttons-color($social-tumblr);
+    }
+    &.btn-behance {
+    	@include social-buttons-color($social-behance);
+    }
+}
+
+// Shadow
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		box-shadow: 0 2px 2px 0 rgba($value,0.2), 0 3px 1px -2px rgba($value,0.2), 0 1px 5px 0 rgba($value,0.2);
+		border-color: $value;
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: 0 14px 26px -12px rgba($value,.42), 0 4px 23px 0 rgba($value,.12), 0 8px 10px -5px rgba($value,.2);
+			background-color: $value;
+			border-color: $value;
+		}
+	}
+}
+
+	

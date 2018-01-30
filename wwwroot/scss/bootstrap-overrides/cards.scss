@@ -1,0 +1,125 @@
+$card-transition:   	transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+$card-hover-shadow: 	0px 12px 19px -7px rgba($black, 0.3);
+$card-shadow:		    0 6px 10px -4px rgba($black, 0.15);
+
+
+.card {
+	box-shadow: $card-shadow;
+	border: none;
+	// If Link
+	&[href] {
+		color: $body-color;
+	}
+	
+	// BG Image
+	&[data-background="image"] {
+	    background-position: center center;
+	    background-size: cover;
+	    &:before {
+		    content: "";
+		    background: rgba($black, 0.4);
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+		    z-index: 1;
+		    border-radius: $card-inner-border-radius;
+	    }
+	    * {
+		    z-index: 2;
+	    }
+	}
+	
+	// Plain Card
+	&.card-plain {
+		background: transparent;
+		box-shadow: none;
+		.card-footer {
+			background: transparent;
+			box-shadow: none;
+		}
+	}
+	
+	.avatar {
+	    max-width: 120px;
+	    max-height: 120px;
+	    margin: -60px auto 0;
+	    border-radius: 50%;
+	    //overflow: hidden;
+	}
+	
+	// Hover Card
+	&.hover-card {
+		transition: $card-transition;
+		&:hover {
+			box-shadow: $card-hover-shadow;
+			transform: translateY(-10px);
+		}
+	}
+	
+	// Card Groups
+	.card-group & {
+		box-shadow: $card-shadow;
+		.card-footer {
+			border-radius: 0;
+		}
+	}
+	
+	// Card Tabs in Header
+	.card-header-tabs {
+		&.nav-tabs {
+			.nav-link {
+				border: 0;
+				&.active {
+					background: $card-bg;
+				}
+			}
+		}
+	}
+	
+	// Icon Header
+	&.card-icon-header {
+		display: block;
+		.card-full-header {
+			float: left;
+		}
+		.card-body {
+			.card-title {
+				margin-bottom: $spacer * 2;
+			}
+		}
+	}
+	
+	// Card Full Header
+	.card-full-header {
+		box-shadow: 0 10px 30px -12px rgba(0,0,0,.42), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+	    margin: -20px 15px 0;
+	    border-radius: $border-radius;
+	    padding: 15px;
+	    background-color: #999;
+	    position: relative;
+	    color: $white;
+	    @each $color, $value in $theme-colors {
+			&.bg-#{$color} {
+				box-shadow: 0 10px 30px -12px rgba($value,.42), 0 4px 25px 0 rgba($value,.12), 0 8px 10px -5px rgba($value,.2);
+			}
+		}
+	    i,
+	    .svg-inline--fa {
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			font-size: $h2-font-size;
+	    }
+	}
+}
+
+// Card Groups
+.card-group {
+	box-shadow: $card-shadow;
+	.card {
+		box-shadow: none;
+	}
+}

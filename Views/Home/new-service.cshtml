@@ -1,0 +1,453 @@
+﻿@{
+    ViewData["Title"] = "Vend Store";
+}
+
+<section class="section pb-4 pri-sec-gradient">
+	<div class="container-fluid text-white">
+		<div class="row">
+			<div class="col">
+				<h1>@ViewData["Title"]</h1>
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-3">
+								<input type="text" class="form-control search"  placeholder="Search name, ID or...">
+							</div>
+							<div class="col-md-3">
+								<select class="form-control">
+									<option selected>Brands</option>
+									<option value="1">Sofas &amp; Stuff</option>
+									<option value="2">MugMcQueen</option>
+									<option value="3">George + Co.</option>
+								</select>
+							</div>
+							<div class="col-md-3">
+								<select class="form-control">
+									<option selected>Tags</option>
+									<option value="1">basket</option>
+									<option value="2">mug</option>
+									<option value="3">tea</option>
+									<option value="3">teapot</option>
+									<option value="3">vase</option>
+								</select>
+							</div>
+							<div class="col-md-3">
+								<a href="" class="btn btn-secondary btn-block">Apply Filter</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section pt-4">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+	
+				<div class="card">
+					<div class="card-body">
+						<nav>
+							<div class="nav nav-pills" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active" id="nav-one-tab" data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true"><i class="fas fa-sticky-note"></i> Products</a>
+								<a class="nav-item nav-link" id="nav-two-tab" data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false"><i class="fas fa-users"></i> Brands</a>
+								<a class="nav-item nav-link" id="nav-three-tab" data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false"><i class="fas fa-tags"></i> Tags</a>
+								<a class="nav-item nav-link" id="nav-four-tab" data-toggle="tab" href="#nav-four" role="tab" aria-controls="nav-four" aria-selected="false"><i class="fas fa-history"></i> Activity</a>
+								<a class="nav-item nav-link" id="nav-five-tab" data-toggle="tab" href="#nav-five" role="tab" aria-controls="nav-five" aria-selected="false"><i class="fas fa-cog"></i> Settings</a>
+								<a class="nav-item nav-link" id="nav-six-tab" data-toggle="tab" href="#nav-six" role="tab" aria-controls="nav-six" aria-selected="false"><i class="fas fa-link"></i> Connections</a>
+								<a class="nav-item nav-link" id="nav-seven-tab" data-toggle="tab" href="#nav-seven" role="tab" aria-controls="nav-seven" aria-selected="false"><i class="fas fa-exchange-alt"></i> Changes</a>
+								<a class="nav-item nav-link" id="nav-eight-tab" data-toggle="tab" href="#nav-eight" role="tab" aria-controls="nav-eight" aria-selected="false"><i class="fas fa-list-alt"></i> Fields</a>
+							</div>
+						</nav>
+					</div>
+				
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+						
+				<table class="table mb-0">
+					<thead class="thead-light">
+						<tr>
+							<th>ID</th>
+							<th>Product</th>
+							<th>Description</th>
+							<th>Image</th>
+							<th>Tags</th>
+							<th>Brand</th>
+							<th>Variants</th>
+							<th>Price</th>
+							<th>Count</th>
+							<th>Model No.</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>001</td>
+							<td>Marley Basket</td>
+							<td>...</td>
+							<td><img src="~/images/basket.jpg" class="rounded"></td>
+							<td><a href="">basket</a></td>
+							<td><a href="">Sofas &amp; Stuff</a></td>
+							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order1">4 Variants <i class="fas fa-chevron-down"></i></a></td>
+							<td>35.90</td>
+							<td>66</td>
+							<td>6009702500892</td>
+						</tr>
+							<tr class="collapse order1">
+								<td>&nbsp;</td>
+					            <td colspan="6">Marley Round Rope Basket / Chalk / Large</td>
+					            <td>35.90</td>
+					            <td>15</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order1">
+						        <td>&nbsp;</td>
+					            <td colspan="6">Marley Round Rope Basket / Slate / Large</td>
+					            <td>35.90</td>
+					            <td>13</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order1">
+						        <td>&nbsp;</td>
+					            <td colspan="6">Marley Round Rope Basket / Chalk / Small</td>
+					            <td>35.90</td>
+					            <td>18</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order1">
+						        <td>&nbsp;</td>
+					            <td colspan="6">Marley Round Rope Basket / Slate / Small</td>
+					            <td>35.90</td>
+					            <td>20</td>
+					            <td>&nbsp;</td>
+					        </tr>
+						<tr>
+							<td>002</td>
+							<td>Moon Mug</td>
+							<td>...</td>
+							<td><img src="~/images/mug.jpg" class="rounded"></td>
+							<td><a href="">mug</a></td>
+							<td><a href="">MugMcQueen</a></td>
+							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order2">3 Variants <i class="fas fa-chevron-down"></i></a></td>
+							<td>25.90</td>
+							<td>26</td>
+							<td>6009702500893</td>
+						</tr>
+							<tr class="collapse order2">
+								<td>&nbsp;</td>
+					            <td colspan="6">Moon Mug / Smokey Pink</td>
+					            <td>25.90</td>
+					            <td>10</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order2">
+								<td>&nbsp;</td>
+					            <td colspan="6">Moon Mug / White</td>
+					            <td>25.90</td>
+					            <td>1</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order2">
+								<td>&nbsp;</td>
+					            <td colspan="6">Moon Mug / Black</td>
+					            <td>25.90</td>
+					            <td>15</td>
+					            <td>&nbsp;</td>
+					        </tr>
+						<tr>
+							<td>003</td>
+							<td>Splatter Vase</td>
+							<td>...</td>
+							<td><img src="~/images/vase.jpg" class="rounded"></td>
+							<td><a href="">vase</a></td>
+							<td><a href="">George + Co.</a></td>
+							<td>-</td>
+							<td>59.00</td>
+							<td>12</td>
+							<td>6009702500895</td>
+						</tr>
+						<tr>
+							<td>004</td>
+							<td>Tea for two set</td>
+							<td>...</td>
+							<td><img src="~/images/tea.jpg" class="rounded"></td>
+							<td><a href="">tea, teapot</a></td>
+							<td><a href="">George + Co.</a></td>
+							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order4">2 Variants <i class="fas fa-chevron-down"></i></a></td>
+							<td>109.90</td>
+							<td>20</td>
+							<td>6009702500822</td>
+						</tr>
+							<tr class="collapse order4">
+								<td>&nbsp;</td>
+					            <td colspan="6">Tea For Two Set / Slate</td>
+					            <td>109.90</td>
+					            <td>10</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					        <tr class="collapse order4">
+								<td>&nbsp;</td>
+					            <td colspan="6">Tea For Two Set / White</td>
+					            <td>109.90</td>
+					            <td>10</td>
+					            <td>&nbsp;</td>
+					        </tr>
+					</tbody>
+				</table>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+						
+				<table class="table mb-0">
+					<thead class="thead-light">
+						<tr>
+							<th>Brands</th>
+							<th>Number of Products</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>George + Co.</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>Sofas &amp; Stuff</td>
+							<td>54</td>
+						</tr>
+						<tr>
+							<td>MugMcQueen</td>
+							<td>23</td>
+						</tr>
+					</tbody>
+				</table>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
+						
+				<table class="table mb-0">
+					<thead class="thead-light">
+						<tr>
+							<th>Name</th>
+							<th>Number of Products</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>basket</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>mug</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>tea</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>teapot</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>vase</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+				
+					</div>
+					<div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
+						
+				<table class="table mb-0">
+					<thead class="thead-light">
+						<tr>
+							<th>&nbsp;</th>
+							<th>State</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td><i class="fas fa-plug text-danger"></i></td>
+							<td>Service disconnected</td>
+							<td>Dec 15, 2017 08:48 am</td>
+						</tr>
+						<tr>
+							<td><i class="fas fa-pencil-alt"></i></td>
+							<td>Service edited</td>
+							<td>Dec 13, 2017 14:28 am</td>
+						</tr>
+						<tr>
+							<td><i class="fas fa-check text-success"></i></td>
+							<td>Service connected</td>
+							<td>Dec 10, 2017 08:48 am</td>
+						</tr>
+						<tr>
+							<td><i class="fas fa-comment-alt"></i></td>
+							<td>Feed requested</td>
+							<td>Dec 11, 2017 10:32 am</td>
+						</tr>
+						<tr>
+							<td><i class="fas fa-plus text-info"></i></td>
+							<td>Service created</td>
+							<td>Dec 9, 2017 10:28 am</td>
+						</tr>
+					</tbody>
+				</table>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab">
+
+								
+						<table class="table mc-table mb-0">
+							<tr>
+						        <th>Store Name</th> 
+						        <td>@ViewData["Title"]</td> 
+						    </tr> 
+							<tr> 
+								<th>API URL</th>
+								<td><a href="">https://{domain_prefix}.vendhq.com/redirect/1.0/sales/{id}</a></td>  
+							</tr> 
+					        <tr> 
+						        <th>Create date</th> 
+						        <td>Dec 15, 2017 08:48 am</td>  
+						    </tr>
+						    <tr> 
+							    <th>Last run</th> 
+							    <td>Dec 18, 2017 08:48 am</td> 
+							</tr>
+					        <tr> 
+						        <th>Service Owner</th> 
+						        <td>John Cusack</td> 
+						    </tr>
+					        <tr> 
+						        <th>Service Stock</th> 
+						        <td>Used Vehicle Stock</td> 
+						    </tr> 
+						    <tr> 
+							    <th>Solution</th>
+								<td>REST API: ASP.net (C#)</td>   
+							</tr>
+						</table>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-six" role="tabpanel" aria-labelledby="nav-six-tab">
+						
+						<table class="table mb-0 table-lg">
+							<tbody>
+								<tr>
+									<td class="text-center">
+										<div class="mixer small">
+											<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Vend">
+												VE
+											</div>
+											<div class="blade blade-left blade-right"  data-toggle="tooltip" data-placement="top" title="Syncing">
+												<i class="fas fa-sync fa-spin fa-lg"></i>
+											</div>
+											<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Superbalist">
+												SB
+											</div>
+										</div>
+									</td>
+									<td>
+										<h5><a href="/connection-su-za">VendSuperbalist</a></h5>
+										<small>Created <b>Today at 08:48</b></small>
+									</td>
+									<td>
+										<small>Last synced: <b>...</b></small><br>
+										<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-secondary"><i class="fas fa-sync fa-spin"></i> Syncing at 83%</div>
+									</td>
+									<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+									<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+					<div class="tab-pane fade" id="nav-seven" role="tabpanel" aria-labelledby="nav-seven-tab"></div>
+					<div class="tab-pane fade" id="nav-eight" role="tabpanel" aria-labelledby="nav-eight-tab">
+						
+				<table class="table mb-0">
+					<thead class="thead-light">
+						<tr>
+							<th width="33%" style="text-align: right">My Products</th>
+							<th width="33%" style="text-align: center">Example Data</th>
+							<th width="33%">Vendor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align: right">Stock ID</td>
+							<td align="center"><div class="badge badge-light">001</div></td>
+							<td>DealerID</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Title</td>
+							<td align="center"><div class="badge badge-light">Marley Basket</div></td>
+							<td>Name</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Description</td>
+							<td align="center"><div class="badge badge-light">...</div></td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Tags</td>
+							<td align="center"><div class="badge badge-light">mug</div></td>
+							<td>CategoryName</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Price</td>
+							<td align="center"><div class="badge badge-light">R100.50</div></td>
+							<td>Price</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Brand</td>
+							<td align="center"><div class="badge badge-light">Sofas &amp; Stuff</div></td>
+							<td>Make</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Variant 1</td>
+							<td align="center"><div class="badge badge-light">Red</div></td>
+							<td>Colour</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Variant 2</td>
+							<td align="center"><div class="badge badge-light">Large</div></td>
+							<td>Size</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Count</td>
+							<td align="center"><div class="badge badge-light">10</div></td>
+							<td>Stock</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Model Number</td>
+							<td align="center"><div class="badge badge-light">6009702500822</div></td>
+							<td>Barcode</td>
+						</tr>
+					</tbody>
+				</table>		
+						
+					</div>
+				</div>
+				
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+@section Scripts {
+	<script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+}
+

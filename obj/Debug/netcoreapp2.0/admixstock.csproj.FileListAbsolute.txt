@@ -1,0 +1,12 @@
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/app.db
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/admixstock.deps.json
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/admixstock.runtimeconfig.json
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/admixstock.runtimeconfig.dev.json
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/admixstock.dll
+/Users/wernergriesel/Projects/admixstock/bin/Debug/netcoreapp2.0/admixstock.pdb
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/admixstock.csproj.CoreCompileInputs.cache
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/admixstock.AssemblyInfoInputs.cache
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/admixstock.AssemblyInfo.cs
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/admixstock.dll
+/Users/wernergriesel/Projects/admixstock/obj/Debug/netcoreapp2.0/admixstock.pdb

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AdmixStock</title>
+
+	
+	<!-- Core Styles -->
+	<link rel="stylesheet" href="~/css/admix.css">
+    
+    <!-- Font Awesome 5 -->
+    <script>
+		FontAwesomeConfig = { searchPseudoElements: true };
+	</script>  
+	<script defer src="~/js/fontawesome-all.js"></script>
+	  
+</head>
+<body>
+	
+	@await Html.PartialAsync("Pageload")
+	@await Html.PartialAsync("NavigationMarketing")
+	@RenderBody()
+
+	<!-- Core Scripts -->
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+	<script src="~/js/popper.min.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	
+	<!-- Vendor Scripts -->
+	
+	@RenderSection("Scripts", required: false)
+	<script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>

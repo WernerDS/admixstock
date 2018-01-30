@@ -1,0 +1,66 @@
+
+.nav-pills {
+	
+	// Rounded Pills
+	&.nav-pills-primary {
+		.nav-link {
+			border-radius: 2rem;
+			margin-right: 1rem;
+			background: $body-bg;
+			color: $body-color;
+			text-align: center;
+			transition: $transition-base;
+			&:hover {
+				background: $white;
+			}
+			&.active {
+				background: $primary;
+				color: $white;
+				box-shadow: 0 2px 2px 0 rgba($primary,0.2), 0 3px 1px -2px rgba($primary,0.2), 0 1px 5px 0 rgba($primary,0.2);
+			}
+		}
+		&.nav-icons-block {
+			.nav-link {
+				border-radius: $border-radius;
+				.svg-inline--fa,
+				i {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		&.nav-icons-only {
+			.nav-link {
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				padding: 0;
+				margin-right: $spacer;
+				.svg-inline--fa,
+				i {
+					display: block;
+					margin: 0 auto;
+					line-height: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+	
+	&.flex-column {
+		.nav-link {
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+		&.nav-icons-only {
+			.nav-link {
+				margin: 0 auto $spacer auto;
+			}
+		}
+	}
+
+}
+
+.tab-content-space {
+	padding: $spacer 0;
+}
