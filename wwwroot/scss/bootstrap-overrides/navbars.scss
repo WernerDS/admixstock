@@ -59,4 +59,19 @@
 			}
 		}
 	}
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		margin-top: $spacer;
+		.nav-item {
+			margin: 1px 0;	
+			.nav-link {
+				text-align: center;
+				background: rgba($white, 0.1);
+				line-height: 30px;
+				.svg-inline--fa {
+					display: none;
+				}
+			}
+		}
+	}
 }

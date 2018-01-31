@@ -6521,6 +6521,19 @@ a.text-dark:hover, a.text-dark:focus {
     .navbar-nav .nav-item .nav-link.active {
       background: rgba(255, 255, 255, 0.1); }
 
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    width: 100%;
+    margin-top: 1rem; }
+    .navbar-nav .nav-item {
+      margin: 1px 0; }
+      .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        line-height: 30px; }
+        .navbar-nav .nav-item .nav-link .svg-inline--fa {
+          display: none; } }
+
 .nav-pills.nav-pills-primary .nav-link {
   border-radius: 2rem;
   margin-right: 1rem;
@@ -6649,7 +6662,8 @@ a.text-dark:hover, a.text-dark:focus {
     float: left;
     border: 2px solid #dee2e6;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
     background: #fff;
     transition: all 0.2s ease-in-out; }
     .mixer .ingedient img,
@@ -6659,7 +6673,9 @@ a.text-dark:hover, a.text-dark:focus {
       max-width: 90%;
       height: 76px; }
     .mixer .ingedient h6,
-    .mixer .blade h6 {
+    .mixer .ingedient h5,
+    .mixer .blade h6,
+    .mixer .blade h5 {
       margin: 0 0.5rem;
       color: #343a40; }
     .mixer .ingedient.to-choose,
@@ -6743,7 +6759,8 @@ a.text-dark:hover, a.text-dark:focus {
       width: 40px;
       height: 40px;
       font-family: "Muli", "Lato", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      line-height: 37px; }
+      line-height: 37px;
+      box-shadow: none; }
       .mixer.small .ingedient .svg-inline--fa,
       .mixer.small .blade .svg-inline--fa {
         height: 36px; }
@@ -6791,6 +6808,20 @@ a.text-dark:hover, a.text-dark:focus {
 .category-list {
   text-align: left; }
 
+.card-mixer {
+  position: relative;
+  width: 440px;
+  margin: 0 auto; }
+  .card-mixer::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .card-mixer .card {
+    float: left;
+    width: 160px; }
+    .card-mixer .card:nth-child(2) {
+      width: 80px; }
+
 @media (min-width: 768px) {
   .container-fluid {
     width: 80%;
@@ -6798,6 +6829,21 @@ a.text-dark:hover, a.text-dark:focus {
     margin-right: 10%;
     position: relative;
     display: table; } }
+
+.floor-bend {
+  position: relative; }
+  .floor-bend:after {
+    content: "";
+    display: block;
+    background-image: url("../images/round-edge.svg");
+    width: 110%;
+    margin-left: -5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    bottom: -1px;
+    height: 40px; }
 
 .avatar {
   -webkit-flex-shrink: 0;

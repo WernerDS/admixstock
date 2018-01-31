@@ -8,6 +8,23 @@
     }
 }
 
+.floor-bend {
+	position: relative;
+	&:after {
+		content: "";
+	    display: block;
+	    background-image: url("../images/round-edge.svg");
+	    width: 110%;
+	    margin-left: -5%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center top;
+	    position: absolute;
+	    bottom: -1px;
+	    height: 40px;
+	}
+}
+
 .avatar {
     -webkit-flex-shrink: 0;
     -moz-flex-shrink: 0;

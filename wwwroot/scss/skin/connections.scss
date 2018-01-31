@@ -14,7 +14,8 @@ $sync-width-sm: 20px;
 	    float: left;
 	    border: 2px solid $border-color;
 	    text-align: center;
-	    border-radius: 2rem;
+	    border-radius: $card-border-radius;
+	    box-shadow: $card-shadow;
 	    background: $white;
 	    transition: $transition-base;
 	    img {
@@ -23,7 +24,8 @@ $sync-width-sm: 20px;
 			max-width: 90%;
 			height: 76px;
 	    }
-	    h6 {
+	    h6,
+	    h5 {
 		    margin: 0 ($spacer / 2);
 		    color: $body-color;
 	    }
@@ -137,6 +139,7 @@ $sync-width-sm: 20px;
 		    height: 40px;
 		    font-family: $headings-font-family;
 		    line-height: 37px;
+		    box-shadow: none;
 		    .svg-inline--fa {
 			    height: 36px;
 		    }
@@ -217,4 +220,19 @@ $sync-width-sm: 20px;
 
 .category-list {
 	text-align: left;
+}
+
+
+.card-mixer {
+	position: relative;
+	@include clearfix();
+	width: 440px;
+	margin: 0 auto;
+	.card {
+		float: left;
+		width: 160px;
+		&:nth-child(2) {
+			width: 80px;
+		}
+	}
 }

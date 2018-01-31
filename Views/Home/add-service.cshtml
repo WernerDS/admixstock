@@ -1,12 +1,26 @@
 ﻿@{
-    ViewData["Title"] = "Add New Service";
+    ViewData["Title"] = "Add new service";
 }
 
-<section class="section pri-sec-gradient">
+<div id="users">
+		
+<section class="section pb-4 pri-sec-gradient">
 	<div class="container-fluid text-white">
 		<div class="row">
 			<div class="col">
 				<h1>@ViewData["Title"]</h1>
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-9">
+								<input type="text" class="form-control search"  placeholder="Search services...">
+							</div>
+							<div class="col-md-3">
+								<button data-sort="name" class="btn btn-secondary btn-block sort">Sort by name</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -16,83 +30,85 @@
 	<div class="container-fluid text-center">
 		<h2 class="mb-5">1. Select Service</h2>
 		
-		<div class="select-service row">
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+		<ul class="row list-unstyled list">
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-adn fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">ADN</h5>
+						<h5 class="text-truncate mb-0 name">ADN</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-vine fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Vend</h5>
+						<h5 class="text-truncate mb-0 name">Vend</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-etsy fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Etsy</h5>
+						<h5 class="text-truncate mb-0 name">Etsy</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-first-order fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">First Order</h5>
+						<h5 class="text-truncate mb-0 name">First Order</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-grav fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Gravity</h5>
+						<h5 class="text-truncate mb-0 name">Gravity</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-korvue fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">KiloShop</h5>
+						<h5 class="text-truncate mb-0 name">KiloShop</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-optin-monster fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Monster Sales</h5>
+						<h5 class="text-truncate mb-0 name">Monster Sales</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-product-hunt fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Product Hunt</h5>
+						<h5 class="text-truncate mb-0 name">Product Hunt</h5>
 					</div>
 				</a>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			</li>
+			<li class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
 				<a href="" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fab fa-stripe-s fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Superbalist</h5>
+						<h5 class="text-truncate mb-0 name">Superbalist</h5>
 					</div>
 				</a>
-			</div>
-		</div>
+			</li>
+		</ul>
 		
 	</div>
 </section>
+
+</div>
 
 <section class="section pt-5">
 	<div class="container-fluid">
@@ -133,7 +149,10 @@
 				
 				<div class="card">
 					<div class="card-body">
-						
+						<div class="progress mb-3">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+						</div>
+						<h4 class="mb-0">Importing stock from Vend</h4>
 					</div>
 				</div>
 				
@@ -159,3 +178,15 @@
 		</div>
 	</div>
 </section>
+
+
+@section Scripts {
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	<script>
+		var options = {
+			valueNames: [ 'name' ]
+		};
+		
+		var userList = new List('users', options);
+	</script>
+}

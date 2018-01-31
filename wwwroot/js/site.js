@@ -28,7 +28,7 @@ $(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >= 250) {
+        if (scroll >= 200) {
             navbar.removeClass('bg-transparent').addClass("pri-sec-gradient");
             //navbar.removeClass('navbar-dark').addClass("navbar-light");
         } else {
