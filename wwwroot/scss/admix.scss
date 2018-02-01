@@ -18,6 +18,7 @@ html, html a, body {
 @import "bootstrap-overrides/cards";
 @import "bootstrap-overrides/forms";
 @import "bootstrap-overrides/navbars";
+@import "bootstrap-overrides/tables";
 @import "bootstrap-overrides/tabs";
 
 // Vendor Overrides
@@ -25,7 +26,9 @@ html, html a, body {
 
 // Skin
 @import "skin/colors";
+@import "skin/compare";
 @import "skin/connections"; 
+@import "skin/features";
 @import "skin/layout";
 @import "skin/pageload";
 @import "skin/pricing";

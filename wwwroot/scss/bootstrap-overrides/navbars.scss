@@ -7,6 +7,11 @@
 	}
 	.navbar-brand {
 		font-weight: 700;
+		img {
+			height: 20px;
+			position: relative;
+			top: -4px;
+		}
 	}
 }
 
@@ -29,6 +34,13 @@
 			&:focus {
 				box-shadow: 0 14px 26px -12px rgba($black,.42), 0 4px 23px 0 rgba($black,.12), 0 8px 10px -5px rgba($black,.2) !important;
 			}
+		}
+	}
+	.navbar-brand {
+		img {
+			height: 20px;
+			position: relative;
+			top: -4px;
 		}
 	}
 }

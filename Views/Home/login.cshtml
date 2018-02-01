@@ -1,12 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Start Here";
+    ViewData["Title"] = "Login";
     Layout = "LayoutMarketing";
 }
 
-<header class="pri-sec-gradient">
+<header class="pri-sec-gradient" style="height: auto; min-height: 100vh">
 	<div class="wrap">
 		<div class="content center-center">
-			<h1 class="mb-5 text-white">Login</h1>
+			<h1 class="mb-5 text-white">@ViewData["Title"]</h1>
 			<div class="row">
 				<div class="col-md-4 mx-auto">
 					<div class="card text-center">
@@ -28,7 +28,7 @@
 									<a href="/new-dashboard" class="btn btn-primary btn-block">Log In New</a>
 				                </div>
 				                <div class="col">
-									<a href="/used-dashboard" class="btn btn-primary btn-block">Log In Used</a>
+									<a href="/used-dashboard" class="btn btn-secondary btn-block">Log In Used</a>
 				                </div>
 			                </div>
 						</div>

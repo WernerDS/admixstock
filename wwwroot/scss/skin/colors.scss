@@ -37,6 +37,12 @@ $secondary-color:     $purple;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.light-text-gradient {
+	background: -webkit-linear-gradient(left, $white, $gray-500);
+	background: linear-gradient(left, $white, $gray-500);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 
 //Social

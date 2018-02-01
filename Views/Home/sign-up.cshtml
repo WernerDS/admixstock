@@ -1,30 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Start Here";
+    ViewData["Title"] = "Signup options";
     Layout = "LayoutMarketing";
 }
 
-<header class="pri-sec-gradient">
+<header class="pri-sec-gradient" style="height: auto; min-height: 100vh">
 	<div class="wrap">
 		<div class="content center-center text-white">
-			<h1 class="mb-5">Signup options</h1>
+			<h1 class="mb-5">@ViewData["Title"]</h1>
 			<div class="row">
 				<div class="col-md-4 ml-auto">
-					<a href="/new-stock-signup" class="card hover-card text-center">
+					<a href="/sign-up-new-stock" class="card hover-card text-center">
 						<div class="card-body">
-							<i class="fas fa-circle fa-5x mb-2"></i>
+							<div><img src="~/images/new-stock.svg" width="200px"></div>
 							<h3>New Stock</h3>
 							<p class="lead">Sync new items across several platforms.</p>
+							<ul class="fa-ul text-left">
+								<li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>List icons can</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>be used to</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>replace bullets</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>in lists</li>
+							</ul>
 							<div class="btn btn-primary">Sign Up</div>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 mr-auto">
-					<a href="/used-stock-signup" class="card hover-card text-center">
+					<a href="/sign-up-used-stock" class="card hover-card text-center">
 						<div class="card-body">
-							<i class="far fa-circle fa-5x mb-2"></i>
+							<div><img src="~/images/used-stock.svg" width="200px"></div>
 							<h3>Used Stock</h3>
 							<p class="lead">Sync existing APIs across other platforms.</p>
-							<div class="btn btn-primary">Sign Up</div>
+							<ul class="fa-ul text-left">
+								<li><span class="fa-li"><i class="fas fa-check-circle text-secondary"></i></span>List icons can</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-secondary"></i></span>be used to</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-secondary"></i></span>replace bullets</li>
+								<li><span class="fa-li"><i class="fas fa-check-circle text-secondary"></i></span>in lists</li>
+							</ul>
+							<div class="btn btn-secondary">Sign Up</div>
 						</div>
 					</a>
 				</div>

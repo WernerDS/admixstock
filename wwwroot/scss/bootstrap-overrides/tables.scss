@@ -1,0 +1,13 @@
+.table {
+	td, th {
+		vertical-align: middle;
+		border-width: 1px !important;
+	}
+	th {
+	}
+	td {
+		h5, h6 {
+			margin-bottom: 0
+		}
+	}
+}

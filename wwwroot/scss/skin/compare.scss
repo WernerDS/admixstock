@@ -1,0 +1,98 @@
+.cocoen {
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+  img, picture > img {
+    max-width: none;
+  }
+  > {
+    img, picture > img {
+      display: block;
+      width: 100%;
+    }
+    div:first-child {
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 50%;
+    }
+  }
+  
+  .side-caption {
+	  position: absolute;
+	  bottom: 20px;
+	  left: 20px;
+	  color: white;
+	  margin: 0;
+	  &.right {
+		  right: 20px;
+		  left: auto;
+	  }
+  }
+  .error { 
+	  position: absolute;
+      right: 345px;
+      top: 170px;
+	  height: 100px;
+	  width: 100px;
+	  border: 3px solid $white;
+	  display: block;
+	  border-radius: $border-radius;
+	  background: rgba($black,0.2);
+	  text-align: center;
+	  color: $white;
+	  box-shadow: $card-shadow;
+	  .svg-inline--fa {
+		  
+	  }
+	  h6 {
+		  font-size: 0.8rem;
+	  }
+  }
+}
+
+picture .cocoen > div {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.cocoen-drag {
+  background: $white;
+  bottom: 0;
+  cursor: ew-resize;
+  left: 50%;
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  &:before {
+	  background: $primary;
+	  border: 3px solid rgba($black, 0.3);
+	  border-radius: 50%;
+      content: '';
+      height: 40px;
+      left: 50%;
+      margin-left: -20px;
+      margin-top: -20px;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+  }
+}

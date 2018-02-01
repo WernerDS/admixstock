@@ -4,15 +4,109 @@
 }
 
 <header class="pri-sec-gradient floor-bend" style="height: 80vh">
+	<div class="stripes">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+    </div>
 	<div class="wrap">
 		<div class="content center-left text-white">
-			<h1>This is AdMix Stock<br>What else do you need?</h1>
+			<div class="row">
+				<div class="col-md-6 text-left">
+					<h1>Foolproof platform for feed management and product content syndication.</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
 
-<section class="section" style="height: 800px">
+<section class="section pt-0" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 mx-auto" style="margin-top: -200px">
+				<div class="card">
+					<div class="card-body">
+						<div class="cocoen">
+							<img src="~/images/before.jpg" alt="" class="img-fluid">
+							<img src="~/images/after.jpg" alt="" class="img-fluid">
+							<div class="side-caption h3">My Store</div>
+							<div class="side-caption right h3">Merchant</div>
+							<div class="error">
+								<i class="fas fa-exclamation-circle fa-lg my-4"></i>
+								<h6>Unmatched</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section bg-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h2 class="mb-4">Think Big. Sync anywhere.</h2>
+				
+				<div class="media my-5">
+				  	<div class="d-flex mr-3">
+						<i class="fab fa-meetup fa-4x text-primary"></i>
+					</div>
+				  	<div class="media-body">
+				    	<h4 class="mt-0">Your Store</h4>
+						<p class="lead">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+				  	</div>
+				</div>
+				
+				<div class="media my-5">
+				  	<div class="d-flex mr-3">
+						<i class="fas fa-chart-area fa-4x text-primary"></i>
+					</div>
+				  	<div class="media-body">
+				    	<h4 class="mt-0">AdMix Stock</h4>
+						<p class="lead">Cras purus odio, vestibulum in vulputate at, tempus viverra turpis ante sollicitudin.</p>
+				  	</div>
+				</div>
+				
+				<div class="media mt-5">
+					<div class="d-flex mr-3">
+						<i class="fab fa-amazon fa-4x text-primary"></i>
+					</div>
+				  	<div class="media-body">
+				    	<h4 class="mt-0">Merchants</h4>
+						<p class="lead">Metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
+				  	</div>
+				</div>
+				
+			</div>
+			<div class="col-md-6 ml-auto text-center align-self-center">
+				<img src="~/images/feature.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section pri-sec-gradient floor-bend" style="height: 600px;overflow: hidden">
 	<div class="container">
 		
 	</div>
 </section>
+
+<section class="section" style="height: 400px">
+	<div class="container">
+		
+	</div>
+</section>
+
+
+@section Scripts {
+	<script src="~/js/splitscreen.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			new Cocoen();
+		});
+	</script>
+}

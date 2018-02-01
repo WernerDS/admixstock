@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 868 539" style="enable-background:new 0 0 868 539;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.8;filter:url(#filter-2);enable-background:new    ;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{filter:url(#filter-4);}
+	.st5{fill:url(#SVGID_2_);}
+	.st6{filter:url(#filter-5);}
+	.st7{fill:url(#SVGID_3_);}
+	.st8{opacity:0.4;filter:url(#filter-7);enable-background:new    ;}
+	.st9{fill:url(#SVGID_4_);}
+	.st10{opacity:5.000000e-02;filter:url(#filter-8);enable-background:new    ;}
+	.st11{filter:url(#filter-11);}
+	.st12{fill:url(#path-10_4_);}
+	.st13{fill:url(#path-10_7_);fill-opacity:3.000000e-02;}
+	.st14{filter:url(#filter-14);}
+	.st15{fill:url(#front_1_);}
+	.st16{fill:url(#path-17_2_);}
+	.st17{fill:url(#path-17_4_);fill-opacity:3.000000e-02;}
+	.st18{filter:url(#filter-22);}
+</style>
+<filter  filterUnits="objectBoundingBox" height="170.4%" id="filter-8" width="105.0%" x="-2.5%" y="-35.2%">
+	<feGaussianBlur  in="SourceGraphic" stdDeviation="6"></feGaussianBlur>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="122.9%" id="filter-7" width="116.2%" x="-8.1%" y="-11.4%">
+	<feGaussianBlur  in="SourceGraphic" stdDeviation="18.1788833"></feGaussianBlur>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="965.1%" id="filter-5" width="102.2%" x="-1.1%" y="-432.5%">
+	<feGaussianBlur  in="SourceGraphic" stdDeviation="2.49988511"></feGaussianBlur>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="965.1%" id="filter-4" width="102.2%" x="-1.1%" y="-432.5%">
+	<feGaussianBlur  in="SourceGraphic" stdDeviation="2.49988511"></feGaussianBlur>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="100.5%" id="filter-22" width="100.2%" x="-0.1%" y="-0.1%">
+	<feOffset  dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feColorMatrix  in="shadowOffsetOuter1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.75 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="446.1%" id="filter-2" width="102.2%" x="-1.1%" y="-173.1%">
+	<feGaussianBlur  in="SourceGraphic" stdDeviation="2.49988511"></feGaussianBlur>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="100.7%" id="filter-14" width="100.3%" x="-0.1%" y="-0.2%">
+	<feGaussianBlur  in="SourceAlpha" result="shadowBlurInner1" stdDeviation="0.5"></feGaussianBlur>
+	<feOffset  dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="100.5%" id="filter-11" width="100.1%" x="-0.1%" y="-0.1%">
+	<feOffset  dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feColorMatrix  in="shadowOffsetOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"></feColorMatrix>
+</filter>
+<pattern  y="674" width="258" height="258" patternUnits="userSpaceOnUse" id="pattern-12" viewBox="0 -258 258 258" style="overflow:visible;">
+	<g>
+		<rect y="-258" class="st0" width="258" height="258"/>
+		<g>
+			
+				<image style="overflow:visible;enable-background:new    ;" width="258" height="258" id="image-13_1_" xlink:href="F2FC58717AF42721.png"  transform="matrix(1 0 0 -1 188.6092 -257.0081)">
+			</image>
+		</g>
+	</g>
+</pattern>
+<pattern  y="674" width="258" height="258" patternUnits="userSpaceOnUse" id="pattern-18" viewBox="0 -444.7 258 258" style="overflow:visible;">
+	<g>
+		<rect y="-444.7" class="st0" width="258" height="258"/>
+		<g>
+			
+				<image style="overflow:visible;enable-background:new    ;" width="258" height="258" id="image-19_1_" xlink:href="F2FC58717AF42720.png"  transform="matrix(1 0 0 -1 258 0)">
+			</image>
+		</g>
+	</g>
+</pattern>
+<g>
+	<rect id="path-20" x="105.9" y="38.7" class="st1" width="659.2" height="374"/>
+</g>
+<title>Group Copy 3</title>
+<desc>Created with Sketch.</desc>
+<g id="Webpage">
+	<g id="Group-Copy-3" transform="translate(0.346734, -0.124921)">
+		<g id="macbook">
+			<g id="shadows" transform="translate(26.021559, 411.293871)">
+				<g id="Rectangle-5" class="st2">
+					
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-90.2964" y1="463.7158" x2="-91.2736" y2="463.7158" gradientTransform="matrix(686.68 0 0 4.3333 62740.832 -1965.225)">
+						<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+						<stop  offset="0.1421" style="stop-color:#000000"/>
+						<stop  offset="0.491" style="stop-color:#000000"/>
+						<stop  offset="0.8527" style="stop-color:#000000"/>
+						<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+					</linearGradient>
+					<rect x="65.1" y="42" class="st3" width="686.7" height="4.3"/>
+				</g>
+				<g id="Rectangle-5_1_" class="st4">
+					
+						<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-90.2964" y1="332.8986" x2="-91.2737" y2="332.8986" gradientTransform="matrix(686.9692 0 0 -1.7339 62702.1992 625.7521)">
+						<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+						<stop  offset="0.8527" style="stop-color:#000000"/>
+						<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+					</linearGradient>
+					<rect x="0" y="47.7" class="st5" width="687" height="1.7"/>
+				</g>
+				<g id="Rectangle-5_2_" class="st6">
+					
+						<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-90.4856" y1="332.8986" x2="-91.4629" y2="332.8986" gradientTransform="matrix(-686.9692 0 0 -1.7339 -62023.7969 625.7521)">
+						<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+						<stop  offset="0.8527" style="stop-color:#000000"/>
+						<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+					</linearGradient>
+					<rect x="121.4" y="47.7" class="st7" width="687" height="1.7"/>
+				</g>
+				<g id="Rectangle-3" class="st8">
+					
+						<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-90.7717" y1="426.4715" x2="-90.7717" y2="426.171" gradientTransform="matrix(672.9815 0 0 -476.8149 61492.4258 203357.4219)">
+						<stop  offset="0" style="stop-color:#9EA0A3"/>
+						<stop  offset="0.529" style="stop-color:#313842;stop-opacity:5.000000e-02"/>
+						<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+					</linearGradient>
+					<path class="st9" d="M84.9,0h639.7c11.6,0,18.8,6,16,13.3l-96.9,255.2c-2.8,7.4-11.5,13.3-19.5,13.3H185.3
+						c-8,0-16.7-6-19.5-13.3L68.9,13.3C66.1,6,73.2,0,84.9,0z"/>
+				</g>
+				<g id="Rectangle-8" class="st10">
+					<path d="M71.5,19.9h672.3c14.1,0,25.6,11.5,25.6,25.6v0c0,14.1-11.5,25.6-25.6,25.6H71.5C57.4,71.1,46,59.6,46,45.5v0
+						C46,31.4,57.4,19.9,71.5,19.9z"/>
+				</g>
+			</g>
+			<g id="case">
+				<g id="screen">
+					<g class="st11">
+						<path id="path-10_4_" d="M85,1h698.8c8.6,0,15.6,7,15.6,15.6v412.5c0,8.6-7,15.6-15.6,15.6H85c-8.6,0-15.6-7-15.6-15.6V16.6
+							C69.4,8,76.4,1,85,1z"/>
+					</g>
+					<g>
+						
+							<linearGradient id="path-10_4_" gradientUnits="userSpaceOnUse" x1="-64.8501" y1="837.7749" x2="-64.6735" y2="836.7905" gradientTransform="matrix(730.0493 0 0 -443.6736 47710.7305 371692.8438)">
+							<stop  offset="0" style="stop-color:#F0F3F7"/>
+							<stop  offset="1" style="stop-color:#E4E8ED"/>
+						</linearGradient>
+						<path id="path-10_1_" class="st12" d="M85,1h698.8c8.6,0,15.6,7,15.6,15.6v412.5c0,8.6-7,15.6-15.6,15.6H85
+							c-8.6,0-15.6-7-15.6-15.6V16.6C69.4,8,76.4,1,85,1z"/>
+					</g>
+					<g>
+						<pattern  id="path-10_7_" xlink:href="#pattern-12" patternTransform="matrix(1 0 0 -1 -123.2624 -16422.8672)">
+						</pattern>
+						<path id="path-10_2_" class="st13" d="M85,1h698.8c8.6,0,15.6,7,15.6,15.6v412.5c0,8.6-7,15.6-15.6,15.6H85
+							c-8.6,0-15.6-7-15.6-15.6V16.6C69.4,8,76.4,1,85,1z"/>
+					</g>
+					<g class="st14">
+						<path id="path-10_9_" d="M85,1h698.8c8.6,0,15.6,7,15.6,15.6v412.5c0,8.6-7,15.6-15.6,15.6H85c-8.6,0-15.6-7-15.6-15.6V16.6
+							C69.4,8,76.4,1,85,1z"/>
+					</g>
+				</g>
+				
+					<linearGradient id="front_1_" gradientUnits="userSpaceOnUse" x1="-65.2718" y1="809.5864" x2="-64.2718" y2="809.5864" gradientTransform="matrix(867.3853 0 0 -5.7778 56615.7969 5120.8198)">
+					<stop  offset="0" style="stop-color:#B9B9B9"/>
+					<stop  offset="2.950000e-02" style="stop-color:#EBEBEB"/>
+					<stop  offset="9.103516e-02" style="stop-color:#F6F6F6"/>
+					<stop  offset="0.1956" style="stop-color:#F1F1F1"/>
+					<stop  offset="0.277" style="stop-color:#F4F7FA"/>
+					<stop  offset="0.4045" style="stop-color:#E7ECF1"/>
+					<stop  offset="0.5945" style="stop-color:#E7ECF1"/>
+					<stop  offset="0.6663" style="stop-color:#F2F5F9"/>
+					<stop  offset="0.7409" style="stop-color:#E5E5E6"/>
+					<stop  offset="0.8755" style="stop-color:#FAFAFA"/>
+					<stop  offset="0.9725" style="stop-color:#DFDFE0"/>
+					<stop  offset="1" style="stop-color:#C1C1C1"/>
+				</linearGradient>
+				<rect id="front" x="0" y="440.3" class="st15" width="867.4" height="5.8"/>
+				<g id="bottom">
+					<g>
+						
+							<linearGradient id="path-17_2_" gradientUnits="userSpaceOnUse" x1="-64.7718" y1="824.1057" x2="-64.7718" y2="823.1057" gradientTransform="matrix(867.3853 0 0 -11.5555 56615.7969 9967.6279)">
+							<stop  offset="0" style="stop-color:#DFE3E8"/>
+							<stop  offset="1" style="stop-color:#B1B9C4"/>
+						</linearGradient>
+						<path id="path-17" class="st16" d="M0,446.1l435.1-1.4v11.6c0,0-177.7,0-296.4,0C20.9,456.2,0,446.1,0,446.1z M867.4,446.1
+							c0,0-20.8,10.1-138.8,10.1c-118,0-293.5,0-293.5,0v-11.6L867.4,446.1z"/>
+					</g>
+					<g>
+						<pattern  id="path-17_4_" xlink:href="#pattern-18" patternTransform="matrix(1 0 0 -1 -192.6533 -17239.8711)">
+						</pattern>
+						<path id="path-17_1_" class="st17" d="M0,446.1l435.1-1.4v11.6c0,0-177.7,0-296.4,0C20.9,456.2,0,446.1,0,446.1z M867.4,446.1
+							c0,0-20.8,10.1-138.8,10.1c-118,0-293.5,0-293.5,0v-11.6L867.4,446.1z"/>
+					</g>
+				</g>
+			</g>
+			<g id="screen_1_" transform="translate(105.531877, 37.943579)">
+				<g id="Mask">
+					<g class="st18">
+						<rect id="path-20_3_" x="0" y="0.9" width="659.2" height="374"/>
+					</g>
+					<g>
+						<rect id="path-20_2_" x="0" y="0.9" class="st1" width="659.2" height="374"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

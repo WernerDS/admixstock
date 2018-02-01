@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Sign Up New";
+    Layout = "LayoutMarketing";
+}
+
+<header class="pri-sec-gradient" style="height: auto; min-height: 100vh">
+	<div class="wrap">
+		<div class="content center-center">
+			<h1 class="mb-5 text-white">@ViewData["Title"]</h1>
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="card text-center">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="my-4"><img src="~/images/new-stock.svg" width="200px"></div>
+									<h3>New Stock</h3>
+									<p class="lead">Sync new items across several platforms.</p>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+				                    	<input class="form-control" placeholder="Name..." type="text" name="" value="">
+				                	</div>
+				                	<div class="form-group">
+				                    	<input class="form-control" placeholder="Company..." type="text" name="" value="">
+				                	</div>
+				                	<div class="form-group">
+				                    	<input class="form-control" placeholder="Website..." type="text" name="" value="">
+				                	</div>
+				                	<div class="form-group">
+				                    	<select class="form-control">
+					                    	<option value="" disabled="" selected="">Country</option>
+					                    	<option>South Africa</option>
+				                    	</select>
+				                	</div>
+				                	<div class="form-group">
+				                    	<select class="form-control">
+											<option value="" disabled="" selected="">Type of Business</option>
+											<option value="Retail/ Ecommerce">Retail/ Ecommerce</option>
+											<option value="Travel">Travel</option>
+											<option value="Brand Manufacturer">Brand Manufacturer</option>
+											<option value="Marketing Agency">Marketing Agency</option>
+											<option value="Implementation Partner">Implementation Partner</option>
+											<option value="Technology Provider">Technology Provider</option>
+											<option value="Other">Other</option>
+				                    	</select>
+				                	</div>
+				                	<div class="form-group">
+				                    	<input class="form-control" placeholder="Email..." type="text" name="" value="">
+				                	</div>
+				                	<div class="form-group">
+				                    	<input class="form-control" placeholder="Password..." type="text"  name="" value="">
+				                	</div>
+				                	<div class="form-group text-left">
+					                    <div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck1" name="RememberMe">
+											<label class="custom-control-label" for="customCheck1">I accept <a href="javascript:void(0)">Terms &amp; Conditions</a></label>
+										</div>
+					                </div>
+					                <a href="/first-time-new-dashboard" class="btn btn-primary btn-block">Sign Up</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

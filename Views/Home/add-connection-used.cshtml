@@ -1,9 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Add new connection";
+    ViewData["Title"] = "Add used connection";
 }
 
 
-<section class="section pri-sec-gradient">
+<section class="section sec-pri-gradient pb-4">
 	<div class="container-fluid text-white">
 		<div class="row">
 			<div class="col">
@@ -24,7 +24,7 @@
 					<i class="fas fa-check-circle status text-success" style="position: absolute; right: 10px; top:10px;"></i>
 					<div class="card-body">
 						<i class="fab fa-vine fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Vend</h5>
+						<h5 class="text-truncate mb-0">Bidvest Toyota</h5>
 					</div>
 				</a>
 			</div>
@@ -33,12 +33,12 @@
 					<i class="fas fa-check-circle status text-success" style="position: absolute; right: 10px; top:10px;"></i>
 					<div class="card-body">
 						<i class="fab fa-stripe-s fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Superbalist</h5>
+						<h5 class="text-truncate mb-0">Auto Mart</h5>
 					</div>
 				</a>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-				<a href="/add-service" class="card hover-card text-center mb-4">
+				<a href="/add-service-used" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fas fa-plus-circle fa-5x mb-2"></i>
 						<h5 class="text-truncate mb-0">Add New</h5>
@@ -52,7 +52,7 @@
 
 <section class="section pt-5">
 	<div class="container-fluid text-center">
-		<h2 class="mb-5">2. Select Vend Categories</h2>
+		<h2 class="mb-5">2. Select Bidvest McCarthy Toyota Categories</h2>
 		
 		<div class="row">
 			<div class="col-md-6 mx-auto">
@@ -60,23 +60,23 @@
 					<div class="card-body">
 						<div class="row mb-4">
 							<div class="col-md-6 text-left">
-								<h5>Brands</h5>
+								<h5>Branches</h5>
 								<div class="category-list">
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="brandCheckAll">
-										<label class="custom-control-label" for="brandCheckAll">All Brands</label>
+										<input type="checkbox" class="custom-control-input" id="branchCheckAll">
+										<label class="custom-control-label" for="branchCheckAll">All Branches</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="brandCheck1">
-										<label class="custom-control-label" for="brandCheck1">George + Co.</label>
+										<input type="checkbox" class="custom-control-input" id="branchCheck1">
+										<label class="custom-control-label" for="branchCheck1">George + Co.</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="brandCheck2">
-										<label class="custom-control-label" for="brandCheck2">Sofas &amp; Stuff</label>
+										<input type="checkbox" class="custom-control-input" id="branchCheck2">
+										<label class="custom-control-label" for="branchCheck2">Sofas &amp; Stuff</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="brandCheck3">
-										<label class="custom-control-label" for="brandCheck3">MugMcQueen</label>
+										<input type="checkbox" class="custom-control-input" id="branchCheck3">
+										<label class="custom-control-label" for="branchCheck3">MugMcQueen</label>
 									</div>
 								</div>
 							</div>
@@ -84,33 +84,33 @@
 								<h5>Tags</h5>
 								<div class="category-list">
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheckAll">
-										<label class="custom-control-label" for="tagCheckAll">All Tags</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheckAll">
+										<label class="custom-control-label" for="categoryCheckAll">All Tags</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheck1">
-										<label class="custom-control-label" for="tagCheck1">Basket</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheck1">
+										<label class="custom-control-label" for="categoryCheck1">Basket</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheck2">
-										<label class="custom-control-label" for="tagCheck2">mug</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheck2">
+										<label class="custom-control-label" for="categoryCheck2">mug</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheck3">
-										<label class="custom-control-label" for="tagCheck3">Tea</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheck3">
+										<label class="custom-control-label" for="categoryCheck3">Tea</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheck4">
-										<label class="custom-control-label" for="tagCheck4">Teapot</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheck4">
+										<label class="custom-control-label" for="categoryCheck4">Teapot</label>
 									</div>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="tagCheck5">
-										<label class="custom-control-label" for="tagCheck5">Vase</label>
+										<input type="checkbox" class="custom-control-input" id="categoryCheck5">
+										<label class="custom-control-label" for="categoryCheck5">Vase</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<a href="javascript:void(0)" class="btn btn-primary">Confirm Categories</a>
+						<a href="javascript:void(0)" class="btn btn-secondary">Confirm Categories</a>
 					</div>
 				</div>
 			</div>
@@ -129,12 +129,12 @@
 					<i class="fas fa-check-circle status text-success" style="position: absolute; right: 10px; top:10px;"></i>
 					<div class="card-body">
 						<i class="fab fa-stripe-s fa-5x mb-2"></i>
-						<h5 class="text-truncate mb-0">Superbalist</h5>
+						<h5 class="text-truncate mb-0">Auto Mart</h5>
 					</div>
 				</a>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-				<a href="/add-service" class="card hover-card text-center mb-4">
+				<a href="/add-service-new" class="card hover-card text-center mb-4">
 					<div class="card-body">
 						<i class="fas fa-plus-circle fa-5x mb-2"></i>
 						<h5 class="text-truncate mb-0">Add New</h5>
@@ -187,22 +187,22 @@
 		<div class="mixer mb-4">
 			<div class="ingedient selected pt-2">
 				<i class="fab fa-vine fa-5x mb-2"></i>
-				<h5>Vend</h5>
+				<h5 class="text-truncate mb-0">Bidvest McCarthy</h5>
 			</div>
 			<div class="blade blade-left blade-right selected" data-toggle="tooltip" data-placement="top" title="Use latest change">
 				<i class="fas fa-clock fa-2x"></i>
 			</div>
 			<div class="ingedient selected pt-2">
 				<i class="fab fa-stripe-s fa-5x mb-2"></i>
-				<h5>Superbalist</h5>
+				<h5 class="text-truncate mb-0">Auto Mart</h5>
 			</div>
 		</div>
 		
 		<div class="row">
 			<div class="col-md-6 mx-auto text-center">
 				<h3>Name your creation</h3>
-				<input type="text" class="form-control form-control-lg my-4" id="" placeholder="ex. VendSuperbalist...">
-				<a href="/connection-new" class="btn btn-primary">Complete Connection</a>
+				<input type="text" class="form-control form-control-lg my-4" id="" placeholder="ex. ToyotaAutoMart...">
+				<a href="/connection-used" class="btn btn-secondary">Complete Connection</a>
 			</div>
 		</div>
 		

@@ -2,7 +2,7 @@
     ViewData["Title"] = "New Dashboard";
 }
 
-<section class="section pri-sec-gradient">
+<section class="section pri-sec-gradient pb-4">
 	<div class="container-fluid text-white">
 		<div class="row">
 			<div class="col">
@@ -20,7 +20,7 @@
 			
 			<div class="card">
 				<div class="card-body">
-					<a href="/add-service" class="btn btn-primary float-right">New Service</a>
+					<a href="/add-service-new" class="btn btn-primary float-right">New Service</a>
 					<h2 class="mb-0">My Services</h2>
 				</div>
 				<table class="table mb-0">
@@ -57,41 +57,7 @@
 								</div>
 							</td>
 							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Service"><i class="fas fa-pencil-alt"></i></a></td>
-							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
-						</tr>
-						<tr>
-							<td width="1%">
-								<span class="fa-layers fa-fw fa-2x">
-								    <i class="fas fa-circle text-danger"></i>
-								    <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>
-								</span>
-							</td>
-							<td width="20%">
-								<h5><a href="/new-service">Vend</a></h5>
-								<small>Created <b>Dec 15, 2017 9:17 am</b></small>
-							</td>
-							<td>
-								<small>Last requested: <b>Today at 10:04 am</b></small><br>
-								<small class="text-truncate">Last status code:</small> <div class="badge badge-pill badge-danger">Fix Service</div>
-							</td>
-							<td>
-								<div class="row">
-									<div class="col">
-										<h5><a href="javascript:void(0)">3</a></h5>
-										<div><i class="fas fa-users"></i> Brands</div>
-									</div>
-									<div class="col">
-										<h5><a href="javascript:void(0)">5</a></h5>
-										<div><i class="fas fa-tags"></i> Tags</div>
-									</div>
-									<div class="col">
-										<h5><a href="javascript:void(0)">2</a></h5>
-										<div><i class="fas fa-link"></i> Connections</div>
-									</div>
-								</div>
-							</td>
-							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Service"><i class="fas fa-pencil-alt"></i></a></td>
-							<td><a href="javascript:void(0)" class="btn btn-primary disabled btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
+							<td><a href="/add-connection-new" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
 						</tr>
 						<tr>
 							<td width="1%">
@@ -125,7 +91,7 @@
 								</div>
 							</td>
 							<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Service"><i class="fas fa-pencil-alt"></i></a></td>
-							<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
+							<td><a href="/add-connection-new" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="Setup Connection"><i class="fas fa-link"></i></a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -139,7 +105,7 @@
 			
 			<div class="card">
 				<div class="card-body">
-					<a href="/add-connection" class="btn btn-primary float-right">New Connection</a>
+					<a href="/add-connection-new" class="btn btn-primary float-right">New Connection</a>
 					<h2 class="mb-0">My Connections</h2>
 				</div>
 				<table class="table mb-0 table-lg">

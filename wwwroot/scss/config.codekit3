@@ -74,6 +74,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/bootstrap-overrides\/tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bootstrap-overrides\/tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/bootstrap-overrides\/tabs.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1153,6 +1166,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/skin\/compare.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/compare.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/skin\/connections.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1162,6 +1188,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/skin\/connections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/skin\/features.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/features.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

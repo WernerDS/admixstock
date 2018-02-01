@@ -2,7 +2,7 @@
     ViewData["Title"] = "Bidvest McCarthy Toyota";
 }
 
-<section class="section pb-4 pri-sec-gradient">
+<section class="section pb-4 sec-pri-gradient">
 	<div class="container-fluid text-white">
 		<div class="row">
 			<div class="col">
@@ -41,8 +41,8 @@
 	</div>
 </section>
 
-
-<div class="container-fluid mt-4">
+<section class="section pt-4">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col">
 
@@ -309,12 +309,85 @@
 </table>
 		
 	</div>
-	<div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab"></div>
-	<div class="tab-pane fade" id="nav-six" role="tabpanel" aria-labelledby="nav-six-tab"></div>
+	<div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab">
+		
+		<table class="table mc-table mb-0">
+			<tr>
+		        <th>Store Name</th> 
+		        <td>@ViewData["Title"]</td> 
+		    </tr> 
+			<tr> 
+				<th>API URL</th>
+				<td><a href="">https://{domain_prefix}.mccarthy.com/redirect/1.0/sales/{id}</a></td>  
+			</tr> 
+	        <tr> 
+		        <th>Create date</th> 
+		        <td>Dec 15, 2017 08:48 am</td>  
+		    </tr>
+		    <tr> 
+			    <th>Last run</th> 
+			    <td>Dec 18, 2017 08:48 am</td> 
+			</tr>
+	        <tr> 
+		        <th>Service Owner</th> 
+		        <td>John Cusack</td> 
+		    </tr>
+	        <tr> 
+		        <th>Service Stock</th> 
+		        <td>Used Vehicle Stock</td> 
+		    </tr> 
+		    <tr> 
+			    <th>Solution</th>
+				<td>REST API: ASP.net (C#)</td>   
+			</tr>
+		</table>
+		
+	</div>
+	<div class="tab-pane fade" id="nav-six" role="tabpanel" aria-labelledby="nav-six-tab">
+		
+		<table class="table mb-0 table-lg">
+			<tbody>
+				<tr>
+					<td class="text-center">
+						<div class="mixer small synced">
+							<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Bidvest McCarthy Toyota">
+								MT
+							</div>
+							<div class="blade blade-left blade-right active" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+								<i class="fas fa-clock fa-lg"></i>
+							</div>
+							<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+								AM
+							</div>
+						</div>
+					</td>
+					<td>
+						<h5><a href="/connection-used">ToyotaAutoMart</a></h5>
+						<small>Created <b>Today at 08:48</b></small>
+					</td>
+					<td>
+						<small>Last synced: <b>Dec 13, 2017 9:48 am</b></small><br>
+						<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i> Connection Good</div>
+					</td>
+					<td>
+						<div class="row">
+							<div class="col">
+								<h5><a href="javascript:void(0)">2</a></h5>
+								<div><i class="fas fa-exchange-alt"></i> Changes</div>
+							</div>
+						</div>
+					</td>
+					<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
+					<td><a href="javascript:void(0)" class="btn btn-secondary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
 	<div class="tab-pane fade" id="nav-seven" role="tabpanel" aria-labelledby="nav-seven-tab"></div>
 	<div class="tab-pane fade" id="nav-eight" role="tabpanel" aria-labelledby="nav-eight-tab">
 		
-<table class="table">
+<table class="table mb-0">
 	<thead class="thead-light">
 		<tr>
 			<th width="33%" style="text-align: right">Bidvest McCarthy</th>
@@ -324,73 +397,193 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td style="text-align: right">Stock ID</td>
-			<td align="center"><div class="badge badge-light">521</div></td>
-			<td>DealerID</td>
+			<td style="text-align: right">UsedVehicleStockID_PK</td>
+			<td align="center"><div class="badge badge-light">1881645</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Title</td>
-			<td align="center"><div class="badge badge-light">VW Polo</div></td>
-			<td>Name</td>
+			<td style="text-align: right">StockCode</td>
+			<td align="center"><div class="badge badge-light">372253</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">DealershipID_FK</td>
+			<td align="center"><div class="badge badge-light">3564</div></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td style="text-align: right">Description</td>
-			<td align="center"><div class="badge badge-light">...</div></td>
-			<td>Description</td>
+			<td align="center"><div class="badge badge-light">TOYOTA RAV 4 RAV4 2.2D GX</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Category</td>
-			<td align="center"><div class="badge badge-light">Cars</div></td>
-			<td>CategoryName</td>
+			<td style="text-align: right">VinnNo</td>
+			<td align="center"><div class="badge badge-light">JTMBA3V50D084224</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Price</td>
-			<td align="center"><div class="badge badge-light">R100,500</div></td>
-			<td>Price</td>
+			<td style="text-align: right">EngineNo</td>
+			<td align="center"><div class="badge badge-light">2AD5824568</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Condition</td>
-			<td align="center"><div class="badge badge-light">Used</div></td>
-			<td>State</td>
+			<td style="text-align: right">ChassisNo</td>
+			<td align="center"><div class="badge badge-light">JTMBA3V50D084224</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Variant 1</td>
-			<td align="center"><div class="badge badge-light">1500 km</div></td>
-			<td>Kilometeres</td>
+			<td style="text-align: right">BodyNo</td>
+			<td align="center"><div class="badge badge-light">0</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Variant 2</td>
-			<td align="center"><div class="badge badge-light">Petrol</div></td>
-			<td>FuelType</td>
-		</tr>
-		<tr>
-			<td style="text-align: right">Variant 3</td>
-			<td align="center"><div class="badge badge-light">AWD</div></td>
-			<td>Drivetrain</td>
-		</tr>
-		<tr>
-			<td style="text-align: right">Variant 4</td>
+			<td style="text-align: right">Colour</td>
 			<td align="center"><div class="badge badge-light">White</div></td>
-			<td>Colour</td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Year</td>
-			<td align="center"><div class="badge badge-light">285000</div></td>
-			<td>Year</td>
+			<td style="text-align: right">Trim</td>
+			<td align="center"><div class="badge badge-light">Cloth</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">Location</td>
-			<td align="center"><div class="badge badge-light">DURBAN</div></td>
-			<td>Seller</td>
+			<td style="text-align: right">RegistrationNo</td>
+			<td align="center"><div class="badge badge-light">FK65RDGP</div></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td style="text-align: right">AttachmentPath1</td>
-			<td align="center"><div class="badge badge-light">item/5/ravt101.jpg</div></td>
-			<td>Attachment1</td>
+			<td style="text-align: right">ModelYear</td>
+			<td align="center"><div class="badge badge-light">2016</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Kilometers</td>
+			<td align="center"><div class="badge badge-light">18000</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">RetailPriceExcl</td>
+			<td align="center"><div class="badge badge-light">350789.4700</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">InStock</td>
+			<td align="center"><div class="badge badge-light">true</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">AllowInternet</td>
+			<td align="center"><div class="badge badge-light">true</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">NewStock</td>
+			<td align="center"><div class="badge badge-light">false</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MetallicColor</td>
+			<td align="center"><div class="badge badge-light">false</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">VehicleCondition</td>
+			<td align="center"><div class="badge badge-light">Very Good</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCode</td>
+			<td align="center"><div class="badge badge-light">60077703</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">UsedVehicleSalesType</td>
+			<td align="center"><div class="badge badge-light">Retail sale</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">UsedVehicleSalesTypeCode</td>
+			<td align="center"><div class="badge badge-light">N</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">CurrentColour</td>
+			<td align="center"><div class="badge badge-light">null</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">CurrentEngine</td>
+			<td align="center"><div class="badge badge-light">null</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">DerivCode</td>
+			<td align="center"><div class="badge badge-light">null</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Transmission</td>
+			<td align="center"><div class="badge badge-light">Manual</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">TransRefNo</td>
+			<td align="center"><div class="badge badge-light">9999999</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">Comments</td>
+			<td align="center"><div class="badge badge-light"></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeMake</td>
+			<td align="center"><div class="badge badge-light">TOYOTA</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeSeries</td>
+			<td align="center"><div class="badge badge-light">RAV 4</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeModel</td>
+			<td align="center"><div class="badge badge-light">RAV4 2.2D GX</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeFuelType</td>
+			<td align="center"><div class="badge badge-light">D</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeBodyType</td>
+			<td align="center"><div class="badge badge-light">SUV</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeVehicleType</td>
+			<td align="center"><div class="badge badge-light">A</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeUse</td>
+			<td align="center"><div class="badge badge-light">GEN</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">MMCodeSeatCount</td>
+			<td align="center"><div class="badge badge-light">5</div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align: right">DaysInStock</td>
+			<td align="center"><div class="badge badge-light">330</div></td>
+			<td></td>
 		</tr>
 	</tbody>
-</table>		
-		
+</table>	
+
 	</div>
 </div>
 </div>
@@ -398,6 +591,7 @@
 		</div>
 	</div>
 </div>
+</section>
 
 @section Scripts {
 	
