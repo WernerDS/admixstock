@@ -1,0 +1,141 @@
+.dataTables_wrapper {
+	position: relative;
+	
+	.actions {
+		position: absolute;
+		right: 15px;
+		top: -55px;
+	}
+	.dt-buttons {
+		display: none;
+	}
+	
+	.dataTables_filter {
+		position: absolute;
+		left: 15px;
+		top: 0;
+		max-width: 300px;
+		font-size: 0;
+		label {
+			margin: 0;
+		}
+		input {
+			@extend .form-control;
+		}
+	}
+	
+	.dataTables_length {
+		position: absolute;
+		right: 15px;
+		top: 0;
+		font-size: 0;
+		label {
+			margin: 0;
+		}
+		select {
+			@extend .form-control;
+		}
+	}
+	
+	.table {
+		margin-top: 55px;
+	}
+	
+	.dataTables_info {
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+	.dataTables_paginate {
+		text-align: center;
+		margin: 20px auto;
+		.paginate_button {
+			color: $pagination-color;
+			background-color: $pagination-bg;
+			border: $pagination-border-width solid $pagination-border-color;
+			display: inline-block;
+			vertical-align: top;
+			border-radius: 50%;
+			margin: 0 1px 0 2px;
+			font-size: 1rem;
+			cursor: pointer;
+			width: 2.5rem;
+			height: 2.5rem;
+			line-height: 2.5rem;
+			text-align: center;
+			@include transition(background-color 300ms, color 300ms);
+			&:hover {
+			    color: $pagination-hover-color;
+			    text-decoration: none;
+			    background-color: $pagination-hover-bg;
+			    border-color: $pagination-hover-border-color;
+			}
+			&:focus {
+			    z-index: 2;
+			    outline: 0;
+			    box-shadow: $pagination-focus-box-shadow;
+			}
+			&.current {
+				z-index: 1;
+				color: $pagination-active-color;
+				background-color: $pagination-active-bg;
+				border-color: $pagination-active-border-color;
+			}
+			&:not(.current):not(.disabled) {
+			    &:hover,
+			    &:focus {
+			      background-color: $pagination-hover-bg;
+			      color: $pagination-color;
+			    }
+			  }
+			  
+			  &.current,
+			  &.disabled {
+			    cursor: default;
+			  }
+			
+			  &.previous,
+			  &.next {
+			    font-size: 0;
+			    position: relative;
+			
+			    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			      font-size: 1rem;
+			    }
+			
+			    &:before {
+			      font-family: "Font Awesome 5 Solid";
+			      font-size: 1rem;
+			      line-height: 2.55rem;
+			    }
+			  }
+			
+			  &.previous {
+			    &:before {
+			      content: '\f053';
+			    }
+			  }
+			
+			  &.next {
+			    &:before {
+			      content: '\f054';
+			    }
+			  }
+			
+			  &.disabled {
+			    opacity: 0.6;
+			    
+			    &:hover,
+			    &:focus {
+			      color: $pagination-color;
+			    }
+			  }
+		}
+		
+	}
+	
+}
+
+.data-table-toggled {
+	overflow: hidden;
+}

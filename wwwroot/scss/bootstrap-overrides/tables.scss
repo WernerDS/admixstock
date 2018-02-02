@@ -9,5 +9,16 @@
 		h5, h6 {
 			margin-bottom: 0
 		}
+		.td-img {
+			position: relative;
+			span {
+				@extend .badge;
+				@extend .badge-pill;
+				@extend .badge-primary;
+				position: absolute;
+				top: -8px;
+				left: 50%;
+			}
+		}
 	}
 }

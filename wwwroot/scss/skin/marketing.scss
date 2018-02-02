@@ -1,0 +1,171 @@
+.devices-dashboard {
+    display: block;
+    width: 1000px;
+    height: 750px;
+    position: absolute;
+    //z-index: -1;
+    left: 30px;
+    //bottom: -140px;
+    div {
+		position: absolute;
+		width: 1000px;
+		height: 750px;
+		background-size: 100% 100%;
+    }
+    .ground {
+	    .shadow {
+		    background-image: url("../images/ground-shadow.png");
+	    }
+    }
+    .laptop {
+	    -webkit-mask: url("../images/laptop-mask.svg");
+		mask: url("../images/laptop-mask.svg");
+		.device {
+			background-image: url("../images/laptop-device.jpg");
+		}
+		.controls {
+			background-image: url("../images/laptop-controls.svg");
+		}
+		.screen {
+			width: 720px;
+		    height: 450px;
+		    border-radius: 6px;
+		    transform: matrix3d(.8562198209416383,.021937972700884066,0,.00007058940264233656,.08894470190852294,.8079581585858137,0,-.00009582949605178664,0,0,1,0,35,42,0,1);
+		    box-shadow: 1px 1px 4px rgba(107,124,147,.5);
+		    background: url("../images/laptop-screen.jpg") 0 0/100% 100%;
+		    
+			transform-origin: 0 0;
+			overflow: hidden;
+			will-change: transform;
+		}
+    }
+}
+
+
+
+.video-container {
+    width: 100%;
+    perspective: 1200px;
+    perspective-origin: 80% 80%;
+    z-index: 1000;
+	.video {
+		position: relative;
+		pointer-events: all;
+		border-radius: 12px;
+		box-shadow: 0 55px 70px -20px rgba(50,50,93,.55), 0 20px 30px -10px rgba(0,0,0,.14);
+		transform: scale(.8) rotateX(3deg) rotateY(-15deg) rotate(-1deg) translateX(0px) translateY(0px)!important;
+		video {
+			background-color: $primary;
+		    display: block;
+		    position: relative;
+		    border-radius: 6px;
+		    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFW…9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+		    transition: border-radius .4s cubic-bezier(.645,0,.355,1);
+		    border-radius: 14px;
+		}
+		.play {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			cursor: pointer;
+			top: 50%;
+			margin-top: -60px;
+			left: 50%;
+			margin-left: -60px;
+			border-radius: 50%;
+			background-color: rgba($black,0.6);
+			opacity: 1;
+			transform-style: preserve-3d;
+			pointer-events: none;
+			background-image: url("../images/play.svg");
+			background-position: calc(50% + 4px) 50%;
+			background-repeat: no-repeat;
+			transition: opacity .4s cubic-bezier(.645,0,.355,1),transform .15s cubic-bezier(.645,0,.355,1);
+		}
+		&:hover {
+			.play {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+
+
+
+
+.floater {
+	position: relative;
+	overflow: hidden;
+}
+.floater .inner {
+	white-space: nowrap;
+	transition: $transition-base;
+	backface-visibility: hidden;
+	perspective: 1000;
+	transform-style: preserve-3d;
+}
+.floater .inner.slide {
+	transform: translate(0);
+	animation: slide 30s linear infinite;
+	transform-style: preserve-3d;
+}
+.floater .inner .wrapping {
+	display: inline-flex;
+	align-items: center;
+}
+.floater .inner .wrapping span {
+	display: block;
+	margin: 0 40px;
+	min-width: 70px;
+	opacity: 0;
+}
+.floater .inner.slide .wrapping span {
+	opacity: 1;
+	animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.floater:before,
+.floater:after {
+	content: "";
+	position: absolute;
+	top: -25px;
+	width: 100px;
+	height: 150px;
+	z-index: 100;
+	pointer-events: none;
+}
+.floater:before {
+	left: 0;
+	//background-image: linear-gradient(90deg, $primary 0%, rgba(0,0,0,0) 100%);
+}
+.floater:after {
+	right: 0;
+	//background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, $secondary 100%);
+}
+
+@include media-breakpoint-up(md) {
+	.floater:before,
+	.floater:after {
+		width: 200px;
+	}
+}
+
+@keyframes slide { 
+	0% {
+		transform:translate(0)
+	} 
+	100% {
+		transform:translate(-2400px, 0);
+	} 
+}

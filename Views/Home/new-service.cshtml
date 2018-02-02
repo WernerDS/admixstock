@@ -55,7 +55,7 @@
 								<a class="nav-item nav-link active" id="nav-one-tab" data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true"><i class="fas fa-sticky-note"></i> Products</a>
 								<a class="nav-item nav-link" id="nav-two-tab" data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false"><i class="fas fa-users"></i> Brands</a>
 								<a class="nav-item nav-link" id="nav-three-tab" data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false"><i class="fas fa-tags"></i> Tags</a>
-								<a class="nav-item nav-link" id="nav-four-tab" data-toggle="tab" href="#nav-four" role="tab" aria-controls="nav-four" aria-selected="false"><i class="fas fa-history"></i> Activity</a>
+								<a class="nav-item nav-link" id="nav-four-tab" data-toggle="tab" href="#nav-four" role="tab" aria-controls="nav-four" aria-selected="false"><i class="fas fa-history"></i> Activity <div class="badge badge-pill badge-danger">14</div></a>
 								<a class="nav-item nav-link" id="nav-five-tab" data-toggle="tab" href="#nav-five" role="tab" aria-controls="nav-five" aria-selected="false"><i class="fas fa-cog"></i> Settings</a>
 								<a class="nav-item nav-link" id="nav-six-tab" data-toggle="tab" href="#nav-six" role="tab" aria-controls="nav-six" aria-selected="false"><i class="fas fa-link"></i> Connections</a>
 								<a class="nav-item nav-link" id="nav-seven-tab" data-toggle="tab" href="#nav-seven" role="tab" aria-controls="nav-seven" aria-selected="false"><i class="fas fa-exchange-alt"></i> Changes</a>
@@ -67,7 +67,7 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
 						
-				<table class="table mb-0">
+				<table id="data-table" class="table mb-0">
 					<thead class="thead-light">
 						<tr>
 							<th>ID</th>
@@ -88,7 +88,7 @@
 							<td>001</td>
 							<td>Marley Basket</td>
 							<td>...</td>
-							<td><img src="~/images/basket.jpg" class="rounded"></td>
+							<td><div class="td-img"><img src="~/images/basket.jpg" class="rounded"><span>4</span></div></td>
 							<td><a href="">basket</a></td>
 							<td><a href="">Sofas &amp; Stuff</a></td>
 							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order1">4 Variants <i class="fas fa-chevron-down"></i></a></td>
@@ -128,7 +128,7 @@
 							<td>002</td>
 							<td>Moon Mug</td>
 							<td>...</td>
-							<td><img src="~/images/mug.jpg" class="rounded"></td>
+							<td><div class="td-img"><img src="~/images/mug.jpg" class="rounded"><span>9</span></div></td>
 							<td><a href="">mug</a></td>
 							<td><a href="">MugMcQueen</a></td>
 							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order2">3 Variants <i class="fas fa-chevron-down"></i></a></td>
@@ -161,7 +161,7 @@
 							<td>003</td>
 							<td>Splatter Vase</td>
 							<td>...</td>
-							<td><img src="~/images/vase.jpg" class="rounded"></td>
+							<td><div class="td-img"><img src="~/images/vase.jpg" class="rounded"><span>12</span></div></td>
 							<td><a href="">vase</a></td>
 							<td><a href="">George + Co.</a></td>
 							<td>-</td>
@@ -173,7 +173,7 @@
 							<td>004</td>
 							<td>Tea for two set</td>
 							<td>...</td>
-							<td><img src="~/images/tea.jpg" class="rounded"></td>
+							<td><div class="td-img"><img src="~/images/tea.jpg" class="rounded"><span>2</span></div></td>
 							<td><a href="">tea, teapot</a></td>
 							<td><a href="">George + Co.</a></td>
 							<td><a href="javascript:void(0)" data-toggle="collapse" data-target=".order4">2 Variants <i class="fas fa-chevron-down"></i></a></td>
@@ -266,7 +266,7 @@
 				<table class="table mb-0">
 					<thead class="thead-light">
 						<tr>
-							<th>&nbsp;</th>
+							<th width="1%">&nbsp;</th>
 							<th>State</th>
 							<th>Date</th>
 						</tr>
@@ -311,8 +311,8 @@
 						        <td>@ViewData["Title"]</td> 
 						    </tr> 
 							<tr> 
-								<th>API URL</th>
-								<td><a href="">https://{domain_prefix}.vendhq.com/redirect/1.0/sales/{id}</a></td>  
+								<th>Feed URL</th>
+								<td><a href="">https://{domain_prefix}.vendhq.com/redirect/1.0/sales/{id}</a><a href="javascript:void(0)" class="badge badge-pill badge-dark float-right">Edit</a></td>  
 							</tr> 
 					        <tr> 
 						        <th>Create date</th> 
@@ -361,7 +361,7 @@
 									</td>
 									<td>
 										<small>Last synced: <b>...</b></small><br>
-										<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-secondary"><i class="fas fa-sync fa-spin"></i> Syncing at 83%</div>
+										<small class="text-truncate">Sync status:</small> <div class="badge badge-pill badge-light"><i class="fas fa-sync fa-spin"></i> Syncing at 83%</div>
 									</td>
 									<td><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Edit Connection"><i class="fas fa-pencil-alt"></i></a></td>
 									<td><a href="javascript:void(0)" class="btn btn-primary btn-square" data-toggle="tooltip" data-placement="top" title="View Connection"><i class="fas fa-eye"></i></a></td>
@@ -448,6 +448,14 @@
 
 
 @section Scripts {
-	<script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<!--
+	<script src="~/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/lib/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/lib/jszip/dist/jszip.min.js"></script>
+    <script src="~/lib/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    
+    <script src="~/js/product-table.js"></script>
+-->
 }
 

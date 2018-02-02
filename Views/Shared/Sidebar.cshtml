@@ -1,8 +1,33 @@
-﻿<div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-    <div class="logo">
-        <a href="/">Admix Stock</a>
+﻿<aside class="sidebar">
+    <div class="scrollbar-inner">
+
+        <div class="user">
+            <div class="user__info" data-toggle="dropdown">
+                <img class="user__img" src="~/images/avatar.jpg" alt="">
+                <div>
+                    <div class="user__name">Werner Griesel</div>
+                    <div class="user__email">wernerg@dotslash.co.za</div>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="">View Profile</a>
+                <a class="dropdown-item" href="">Settings</a>
+                <a class="dropdown-item" href="">Logout</a>
+            </div>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="navigation__sub">
+                <a href=""><i class="fas fa-home"></i> Dropdown</a>
+
+                <ul>
+                    <li><a href="">Hidden Sidebar</a></li>
+                    <li><a href="">Boxed Layout</a></li>
+                    <li><a href="">Boxed Layout with Hidden Sidebar</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div class="sidebar-wrapper">
-        @await Html.PartialAsync("LoginPartialSidebar")
-    </div>
-</div>
+</aside>

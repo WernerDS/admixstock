@@ -1,3 +1,9 @@
+.dashboard-body {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .container-fluid {
 	@include media-breakpoint-up(md) {
 		width: 80%;
@@ -9,6 +15,7 @@
 }
 
 .floor-bend {
+	overflow: hidden;
 	&:after {
 		content: "";
 	    display: block;

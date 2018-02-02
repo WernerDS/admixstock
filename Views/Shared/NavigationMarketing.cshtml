@@ -6,12 +6,21 @@
         </button>
         
         <div class="collapse navbar-collapse" id="mainNav">
-			<ul id="nav" class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="/features">Features</a></li>
-				<li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-				<li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+			<ul id="nav" class="navbar-nav mx-auto">
+				<li class="nav-item"><a class="nav-link" href="javascript:void(0)">Features</a></li>
+				<li class="nav-item"><a class="nav-link" href="javascript:void(0)">Pricing</a></li>
+				<li class="nav-item dropdown">
+	                <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-th"></i></a>
+					<ul class="dropdown-menu dropdown-menu-right product-menu">
+						<a class="dropdown-item" href="https://admix.dsdemo.co.za/" target="_blank"><div><img src="~/images/talk.svg"><span>Talk</span></div></a>
+	                    <a class="dropdown-item" href="javascript:void(0)"><div><img src="~/images/messages.svg"><span>Message</span></div></a>
+	                    <a class="dropdown-item" href="javascript:void(0)"><div><img src="~/images/forms.svg"><span>Form</span></div></a>
+	                    <a class="dropdown-item" href="javascript:void(0)"><div><img src="~/images/chat.svg"><span>Chat</span></div></a>
+	                </ul>
+	            </li>
 			</ul>
 			<form class="form-inline">
+				<a href="/login" class="btn btn-outline-light btn-sm">Login</a>
 			    <a href="/sign-up" class="btn btn-dark btn-sm ml-2">Sign Up</a>
 			</form>
   		</div>

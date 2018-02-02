@@ -1205,6 +1205,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/skin\/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/skin\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/skin\/layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1214,6 +1240,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/skin\/layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/skin\/marketing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/marketing.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1257,6 +1296,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/skin\/sidebar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/skin\/sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/skin\/switch.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1266,6 +1318,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/skin\/switch.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/vendor-overrides\/data-tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor-overrides\/data-tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

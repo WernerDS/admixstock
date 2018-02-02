@@ -37,6 +37,7 @@
 		}
 	}
 	.navbar-brand {
+		font-family: $headings-font-family;
 		img {
 			height: 20px;
 			position: relative;
@@ -63,6 +64,7 @@
 			font-size: $font-size-sm;
 			font-weight: 700;
 			transition: $transition-base;
+			font-family: $headings-font-family;
 			&:hover {
 				background: rgba($white, 0.1);
 			}
@@ -86,4 +88,36 @@
 			}
 		}
 	}
+	
+	// Product Menu
+	.product-menu {
+		padding: $spacer/2;
+		margin: 0;
+		width: 220px;
+		@include clearfix();
+		.dropdown-item {
+			width: 50%;
+			float: left;
+			clear: none;
+			padding: 0;
+			border-radius: $border-radius;
+			div {
+				text-align: center;
+				padding: $spacer/2;
+				border-radius: $border-radius;
+				img {
+					display: block;
+					text-align: center;
+					margin: 0 auto 3px;
+					height: 50px;
+				}
+				span {
+					font-family: $headings-font-family;
+				}
+			}
+			&:hover {
+			}
+		}
+	}
 }
+
